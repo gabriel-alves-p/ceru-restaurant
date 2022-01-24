@@ -1,0 +1,1 @@
+web: gunicorn ceru-restaurant.wsgi
