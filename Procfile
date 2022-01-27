@@ -1,1 +1,1 @@
-web: gunicorn ceru-restaurant.wsgi
+web: gunicorn ceru_restaurant.wsgi
