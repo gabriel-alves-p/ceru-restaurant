@@ -17,7 +17,7 @@ class Guest(models.Model):
         return f"Username: {self.username} | For user: {self.first_name} {self.last_name} | Email: {self.email} | Date of birth: {self.date_of_birth}"  # noqa
 
 
-class Bookings(models.Model):
+class Booking(models.Model):
     """
     A class to display bookings.
     """
