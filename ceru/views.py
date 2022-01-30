@@ -10,4 +10,4 @@ class BookingDisplay(generic.ListView):
     """
     model = Booking
     queryset = Booking.objects.order_by('-date')
-    template_name = 'dashboard.html'
+    template_name = 'index.html'
