@@ -6,15 +6,14 @@ class Guest(models.Model):
     """
     A class to define the user in the database.
     """
-    username = models.ForeignKey(User, on_delete=models.CASCADE, related_name='guest')  # noqa
-    email = models.EmailField(max_length=80)
+    email = models.ForeignKey(User, on_delete=models.CASCADE, related_name='guest')  # noqa
     password = models.CharField(max_length=80)
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
     date_of_birth = models.DateField()
 
     def __str__(self):
-        return f"Username: {self.username} | For user: {self.first_name} {self.last_name} | Email: {self.email} | Date of birth: {self.date_of_birth}"  # noqa
+        return f"Guest: {self.first_name} {self.last_name} | Email: {self.email}"  # noqa
 
 
 class Booking(models.Model):
