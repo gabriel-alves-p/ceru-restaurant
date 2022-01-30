@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Guest, Booking
+from .models import Booking
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -11,6 +11,5 @@ class BookingAdmin(SummernoteModelAdmin):
     in this case: requirements in Guest model.
     """
     summernote_fields = ('requirements')
-
-
-admin.site.register(Guest)
+    list_filter = ('date', 'time', 'email')
+    search_fields = ('email',)
