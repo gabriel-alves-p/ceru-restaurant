@@ -15,7 +15,6 @@ from django.contrib.auth.models import User
 #     def __str__(self):
 #         return f"Guest: {self.first_name} {self.last_name} | Email: {self.email}"  # noqa
 
-
 class Booking(models.Model):
     """
     A class to display bookings.
@@ -28,6 +27,7 @@ class Booking(models.Model):
     time = models.TimeField()
     requirements = models.CharField(max_length=255)
     created_on = models.DateTimeField(auto_now_add=True)
+    confirmed = models.BooleanField(default=False)
 
     class Meta:
         """

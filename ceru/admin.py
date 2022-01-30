@@ -13,3 +13,7 @@ class BookingAdmin(SummernoteModelAdmin):
     summernote_fields = ('requirements')
     list_filter = ('date', 'time', 'email')
     search_fields = ('email',)
+    actions = ['confirm_booking']
+
+    def confirm_booking(self, queryset):
+        queryset.update(confirmed=True)
