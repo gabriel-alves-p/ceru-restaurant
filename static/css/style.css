@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #0C5679;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* ----------------------------------------- Navbar */
 #nav-logo {
     font-family: 'Monoton', cursive;
@@ -15,7 +26,8 @@
     background-color: #E5340B;
 }
 
-.navbar a, span {
+.navbar a,
+span {
     font-family: 'Poppins', sans-serif;
     color: #FFE7BD !important;
     font-size: 14px;
@@ -27,4 +39,30 @@
     font-size: 16px;
     background-color: #E5340B;
     color: #FFE7BD;
+}
+
+/* ----------------------------------------- Hero Image */
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero3.jpeg') no-repeat center center;
+    background-size: cover;
+    color: #FFE7BD;
+}
+
+#hero-image h1 {
+    font-family: 'Monoton', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#hero-image h3 {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+}
+
+.intro-msg {
+    background-color: rgba(12, 86, 121, 0.7);
+    margin-top: 50px;
+    height: 200px;
 }
