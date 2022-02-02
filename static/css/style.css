@@ -31,6 +31,13 @@ span {
     font-family: 'Poppins', sans-serif;
     color: #FFE7BD !important;
     font-size: 14px;
+    padding-bottom: 0;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    border-bottom: 0.5px solid #FFE7BD;
+    transition: 1s;
 }
 
 /* ----------------------------------------- Footer */
@@ -63,6 +70,12 @@ span {
     font-family: 'Poppins', sans-serif;
     background-color: #E5340B;
     color: #FFE7BD;
+}
+
+#hero-image button:hover {
+    background-color: #FFE7BD;
+    color: #E5340B;
+    transition: 1s;
 }
 
 #hero-image h4 {
