@@ -17,7 +17,7 @@ html {
 
 /* ----------------------------------------- Navbar */
 #nav-logo {
-    font-family: 'Monoton', cursive;
+    font-family: 'Monoton', sans-serif;
     font-size: 30px;
     color: #FFE7BD;
 }
@@ -48,21 +48,32 @@ span {
     background: url('../images/hero3.jpeg') no-repeat center center;
     background-size: cover;
     color: #FFE7BD;
+    margin-top: 70px;
+}
+
+.intro {
+    height: 450px;
 }
 
 #hero-image h1 {
     font-family: 'Monoton', sans-serif;
-    text-align: center;
-    margin-top: 20px;
 }
 
-#hero-image h3 {
+#hero-image button {
     font-family: 'Poppins', sans-serif;
-    margin-top: 30px;
+    background-color: #E5340B;
+    color: #FFE7BD;
+}
+
+#hero-image h4 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFE7BD;
+}
+
+.intro-row {
+    background-color: rgba(12, 86, 121, 0.4);
 }
 
 .intro-msg {
-    background-color: rgba(12, 86, 121, 0.7);
-    margin-top: 50px;
-    height: 200px;
+    margin: 10px 0;
 }
