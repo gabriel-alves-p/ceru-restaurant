@@ -1,3 +1,4 @@
+/* ----------------------------------------- ALL */
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@300;400&display=swap');
 
 * {
@@ -15,7 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ----------------------------------------- Navbar */
+/* ----------------------------------------- NAVIGATION BAR */
 #nav-logo {
     font-family: 'Monoton', sans-serif;
     font-size: 30px;
@@ -40,7 +41,7 @@ span {
     transition: 1s;
 }
 
-/* ----------------------------------------- Footer */
+/* ----------------------------------------- FOOTER */
 .footer {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -48,14 +49,14 @@ span {
     color: #FFE7BD;
 }
 
-/* ----------------------------------------- Hero Image */
+/* ----------------------------------------- HERO IMAGE & INTRO */
 #hero-image {
     height: 600px;
     width: 100%;
     background: url('../images/hero3.jpeg') no-repeat center center;
     background-size: cover;
     color: #FFE7BD;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .intro {
@@ -89,4 +90,13 @@ span {
 
 .intro-msg {
     margin: 10px 0;
+}
+
+/* ----------------------------------------- ABOUT US SECTION */
+#about-us {
+    height: 600px;
+}
+
+.about-us-container {
+    height: 100%;
 }
