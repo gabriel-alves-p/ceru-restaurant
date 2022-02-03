@@ -23,10 +23,15 @@ h4,
 h5,
 h6 {
     font-family: 'Monoton', sans-serif;
+    color: #FFE7BD;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
+}
+
+section {
+    border-bottom: 1px solid #FFE7BD;
 }
 
 /* ----------------------------------------- NAVIGATION BAR */
@@ -77,13 +82,15 @@ span {
 }
 
 
-#hero-image button {
+#hero-image button,
+#menus button {
     font-family: 'Poppins', sans-serif;
     background-color: #E5340B;
     color: #FFE7BD;
 }
 
-#hero-image button:hover {
+#hero-image button:hover,
+#menus button:hover {
     background-color: #FFE7BD;
     color: #E5340B;
     transition: 1s;
@@ -108,7 +115,7 @@ span {
     color: #FFE7BD;
 }
 
-#about-us h2 {
+#about-us h2, #menus h2 {
     border-bottom: 1px solid #FFE7BD;
 }
 
@@ -118,4 +125,9 @@ span {
 
 .about-us-text {
     padding: 30px;
+}
+
+/* ----------------------------------------- MENUS SECTION */
+.menu-title {
+    padding: 50px 0 30px 0;
 }
