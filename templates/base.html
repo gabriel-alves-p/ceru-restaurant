@@ -34,7 +34,7 @@
                         <a class="nav-link" href="{% url 'home' %}#about-us">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menus</a>
+                        <a class="nav-link" href="{% url 'home' %}#menus">Menus</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Find Us</a>
@@ -43,6 +43,9 @@
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     {% if user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Your Bookings</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Logout</a>
                     </li>
