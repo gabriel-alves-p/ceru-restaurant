@@ -131,3 +131,7 @@ span {
 .menu-title {
     padding: 50px 0 30px 0;
 }
+
+.carousel-col {
+    padding: 0;
+}
