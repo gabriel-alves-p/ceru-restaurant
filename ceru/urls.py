@@ -3,5 +3,6 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('', views.BookingDisplay.as_view(), name='home')
+    path('', views.IndexView.as_view(), name='home'),
+    path('accounts/login/dashboard/', views.BookingDisplay.as_view(), name='dashboard'),  # noqa
 ]
