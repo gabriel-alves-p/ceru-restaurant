@@ -6,29 +6,28 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<!-- SIGN UP FORM -->
-<div class="container d-flex align-items-center justify-content-center">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign In" %}</h3>
+<!-- LOGIN FORM -->
+<header id="signup-hero-image">
+  <div class="container d-flex align-items-center justify-content-center signup-form">
+    <div class="row d-flex align-items-center signup-row">
+      <div class="col-12 col-md-8 pt-5 pt-md-0">
+        <h3 class='pt-2 pt-md-0'>{% trans "Sign In" %}</h3>
 
-      <p>{% blocktrans %}Welcome back to the code|star blog. To leave a comment or like a post, please log in. If
-        you
-        have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
-        first.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Welcome back to Ceru!</p>
+        <p>To book or manage your bookings, please sign in.</p>
+        <p>Don't have an account yet? Click <a class="link" href="{{ signup_url }}">here</a> to sign up.{% endblocktrans %}</p>
+      </div>
+      <div class="col-7 col-sm-6 col-md-4 pb-5 mx-auto py-md-5">
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}
+          {{ form.as_p }}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+        </form>
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-      <form class="login" method="POST" action="{% url 'account_login' %}">
-        {% csrf_token %}
-        {{ form.as_p }}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
-      </form>
-    </div>
-  </div>
-</div>
+</header>
 {% endblock %}
