@@ -5,19 +5,20 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
-<header id="hero-image">
-  <div class="container d-flex align-items-center justify-content-center intro-row signup-form">
-    <div class="row d-flex align-items-center">
-      <div class="col-12 col-md-8 pt-5">
+<header id="signup-hero-image">
+  <div class="container d-flex align-items-center justify-content-center signup-form mt-5">
+    <div class="row d-flex align-items-center signup-row">
+      <div class="col-12 col-md-8 pt-5 pt-md-0">
         <h3>{% trans "Sign Up" %}</h3>
 
-        <p>{% blocktrans %}Welcome to Ceru, please sign up to get booking!</p>
+        <p>{% blocktrans %}Welcome to the Ceru family!</p>
+        <p>Please sign up to get booking!</p>
         <p>Already have an account? Click <a class="link" href="{{ login_url }}">here</a> to login.{% endblocktrans %}
         </p>
       </div>
 
 
-      <div class="col-4 pb-2 py-md-5">
+      <div class="col-7 col-sm-6 col-md-4 pb-5 mx-auto py-md-5">
         <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}
           {{ form.as_p }}

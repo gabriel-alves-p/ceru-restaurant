@@ -85,6 +85,7 @@ span {
 
 
 #hero-image button,
+#signup-hero-image button,
 #menus button {
     font-family: 'Poppins', sans-serif;
     background-color: #E5340B;
@@ -92,13 +93,15 @@ span {
 }
 
 #hero-image button:hover,
+#signup-hero-image button:hover,
 #menus button:hover {
     background-color: #FFE7BD;
     color: #E5340B;
     transition: 1s;
 }
 
-#hero-image h4 {
+#hero-image h4,
+#signup-hero-image h4 {
     font-family: 'Poppins', sans-serif !important;
     color: #FFE7BD;
 }
@@ -117,7 +120,8 @@ span {
     color: #FFE7BD;
 }
 
-#about-us h2, #menus h2 {
+#about-us h2,
+#menus h2 {
     border-bottom: 1px solid #FFE7BD;
 }
 
@@ -139,3 +143,15 @@ span {
 }
 
 /* ---------------------------------------------------------------------------------- SIGNUP.HTML */
+#signup-hero-image {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero2.png') no-repeat center center;
+    background-size: cover;
+    color: #FFE7BD;
+    margin-top: 50px;
+}
+
+.signup-row {
+    background-color: rgba(0, 0, 0, 0.6);
+}
