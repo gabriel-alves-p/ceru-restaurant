@@ -155,3 +155,11 @@ span {
 .signup-row {
     background-color: rgba(0, 0, 0, 0.6);
 }
+
+.link {
+    color: #FFE7BD;
+}
+
+.link:hover {
+    color: #E5340B;
+}
