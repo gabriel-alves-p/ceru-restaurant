@@ -5,6 +5,7 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
 {% block content %}
+<!-- SIGN UP FORM -->
 <header id="signup-hero-image">
   <div class="container d-flex align-items-center justify-content-center signup-form mt-5">
     <div class="row d-flex align-items-center signup-row">
@@ -16,8 +17,6 @@
         <p>Already have an account? Click <a class="link" href="{{ login_url }}">here</a> to login.{% endblocktrans %}
         </p>
       </div>
-
-
       <div class="col-7 col-sm-6 col-md-4 pb-5 mx-auto py-md-5">
         <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
           {% csrf_token %}
