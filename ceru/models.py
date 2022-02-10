@@ -17,7 +17,7 @@ from django.contrib.auth.models import User
 
 class Booking(models.Model):
     """
-    A class to display bookings.
+    A class to make bookings.
     """
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)

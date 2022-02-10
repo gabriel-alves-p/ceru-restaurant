@@ -10,7 +10,15 @@
                 <h1>Welcome to Ceru</h1>
             </div>
             <div class="col-12 intro-msg d-flex justify-content-center">
-                <button type="button" class="btn btn-secondary btn-lg">Book with us!</button>
+                {% if user.is_authenticated %}
+                <a href="{% url 'account_login' %}">
+                    <button type="button" class="btn btn-secondary btn-lg">Book with us!</button>
+                </a>
+                {% else %}
+                <a href="{% url 'account_signup' %}">
+                    <button type="button" class="btn btn-secondary btn-lg">Book with us!</button>
+                </a>
+                {% endif %}
             </div>
             <div class="col-12 intro-msg d-flex justify-content-center">
                 <h4>Authentic American diner, est. 1972.</h4>
