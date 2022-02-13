@@ -28,10 +28,15 @@ h6 {
 
 p {
     font-family: 'Poppins', sans-serif;
+    color: #FFE7BD;
 }
 
 section {
     border-bottom: 1px solid #FFE7BD;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ---------------------------------------------------------------------------------- BASE.HTML */

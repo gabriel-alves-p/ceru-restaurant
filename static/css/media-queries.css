@@ -1,5 +1,8 @@
 /* ----------------------------------------- Small devices (landscape phones, 576px and down) */
 @media (max-width: 767px) {
+    
+    /* ----------------------------------------- index.html */
+    
 
     /* ----------------------------------------- signup.html, login.html, logout.html */
     .signup-row {
