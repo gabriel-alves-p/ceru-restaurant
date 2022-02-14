@@ -37,10 +37,10 @@
                         <a class="nav-link" href="{% url 'home' %}#menus">Menus</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Find Us</a>
+                        <a class="nav-link" href="{% url 'home' %}#find-us">Find Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="{% url 'home' %}#find-us">Contact Us</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
