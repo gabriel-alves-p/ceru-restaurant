@@ -90,7 +90,8 @@ span {
 
 #hero-image button,
 #signup-hero-image button,
-#menus button {
+#menus button,
+#find-us button {
     font-family: 'Poppins', sans-serif;
     background-color: #E5340B;
     color: #FFE7BD;
@@ -98,7 +99,8 @@ span {
 
 #hero-image button:hover,
 #signup-hero-image button:hover,
-#menus button:hover {
+#menus button:hover,
+#find-us button:hover {
     background-color: #FFE7BD;
     color: #E5340B;
     transition: 1s;
@@ -146,6 +148,16 @@ span {
     width: 100%;
     margin: 15px 0;
     padding: 15px 0;
+}
+
+/* ----------------------------------------- FIND US / CONTACT US SECTION */
+#contact-form {
+    font-family: 'Poppins', sans-serif;
+    color: #0C5679;
+}
+
+.form-control {
+    border: 1px solid #E5340B;
 }
 
 /* ---------------------------------------------------------------------------------- SIGNUP.HTML */
