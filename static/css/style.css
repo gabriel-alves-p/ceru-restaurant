@@ -191,3 +191,8 @@ span {
     background-size: cover;
     margin-top: 50px;
 }
+
+#booking-form {
+    font-family: 'Poppins', sans-serif;
+    color: #FFE7BD;
+}

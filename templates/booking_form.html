@@ -4,47 +4,61 @@
 {% block content %}
 
 <header id="booking-hero-image">
-    <div class="container d-flex align-items-center justify-content-center signup-form mt-5">
-        <div class="col-md-8 signup-row">
+    <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center signup-form mt-5">
+        <div class="col-md-12 signup-row">
             <h1 class="my-5 text-center">Make a Booking</h1>
-            <form action="{% url 'booking' %}" class="row g-3" method="POST" id="contact-form">
+            <form action="{% url 'booking' %}" class="col" method="POST" id="booking-form">
                 {% csrf_token %}
-                <div class="col-10 col-md-6 form-floating m-auto mb-3">
-                    <input type="text" class="form-control" id="firstName" required placeholder="First Name">
-                    <label for="firstName" class="form-label">First Name</label>
+                <div class="row mb-3">
+                    <label for="firstName" class="col-4 col-md-3 col-form-label text-center">First Name</label>
+                    <div class="col-7 col-md-8">
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
                 </div>
-                <div class="col-10 col-md-6 form-floating m-auto mb-3">
-                    <input type="text" class="form-control" id="lastName" required placeholder="Last Name">
-                    <label for="lastName" class="form-label">Last Name</label>
+                <div class="row mb-3">
+                    <label for="lastName" class="col-4 col-md-3 col-form-label text-center">Last Name</label>
+                    <div class="col-7 col-md-8">
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
                 </div>
-                <div class="col-10 col-md-6 form-floating m-auto mb-3">
-                    <input type="email" class="form-control" id="emailAddress" required placeholder="E-mail Address">
-                    <label for="emailAddress" class="form-label">E-mail Address</label>
+                <div class="row mb-3">
+                    <label for="emailAddress" class="col-4 col-md-3 col-form-label text-center">E-mail</label>
+                    <div class="col-7 col-md-8">
+                        <input type="email" class="form-control" id="emailAddress" required>
+                    </div>
                 </div>
-                <div class="col-10 col-md-6 form-floating m-auto mb-3">
-                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number (optional)">
-                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                <div class="row mb-3">
+                    <label for="phoneNumber" class="col-4 col-md-3 col-form-label text-center">Phone Nº</label>
+                    <div class="col-7 col-md-8">
+                        <input type="text" class="form-control" id="phoneNumber">
+                    </div>
                 </div>
-                <div class="col-10 col-md-6 form-floating m-auto mb-3">
-                    <input type="date" class="form-control" id="date" required placeholder="Date">
-                    <label for="date" class="form-label">Date</label>
+                <div class="row mb-3">
+                    <label for="date" class="col-4 col-md-3 col-form-label text-center">Date</label>
+                    <div class="col-7 col-md-8">
+                        <input type="date" class="form-control" id="date" required>
+                    </div>
                 </div>
-                <div class="col-10 col-md-6 form-floating m-auto mb-3">
-                    <input type="time" class="form-control" id="time" required placeholder="Time">
-                    <label for="time" class="form-label">Time</label>
+                <div class="row mb-3">
+                    <label for="time" class="col-4 col-md-3 col-form-label text-center">Time</label>
+                    <div class="col-7 col-md-8">
+                        <input type="time" class="form-control" id="time" required>
+                    </div>
                 </div>
-                <div class="col-10 col-md-6 form-floating m-auto mb-3">
-                    <input type="number" class="form-control" id="quantity" min="1" max="6" required placeholder="Nº of guests">
-                    <label for="quantity" class="form-label">Nº of guests</label>
+                <div class="row mb-3">
+                    <label for="quantity" class="col-4 col-md-3 col-form-label text-center">Nº of guests</label>
+                    <div class="col-7 col-md-8">
+                        <input type="number" class="form-control" id="quantity" min="1" max="6" required>
+                    </div>
                 </div>
-                <div class="col-10 form-floating m-auto mb-3">
-                    <textarea id="requirements" class="form-control" style="height: 188px;" placeholder="Any requirements?"></textarea>
-                    <label for="requirements" class="form-label">Any requirements?</label>
+                <div class="row mb-3">
+                    <label for="requirements" class="col-4 col-md-3 col-form-label text-center">Any requirements?</label>
+                    <div class="col-7 col-md-8">
+                        <textarea id="requirements" class="form-control" style="height: 188px;"></textarea>
+                    </div>
                 </div>
-                <div class="col-10 m-auto">
+                <div class="col-11 m-auto">
                     <button type="reset" class="btn btn-secondary btn-lg">Reset</button>
-                </div>
-                <div class="col-10 m-auto">
                     <button type="submit" class="btn btn-secondary btn-lg">Book</button>
                 </div>
             </form>
