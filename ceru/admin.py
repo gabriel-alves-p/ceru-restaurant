@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import Booking
+from .models import Booking, Profile
 
 
 @admin.register(Booking)
@@ -17,3 +17,6 @@ class BookingAdmin(SummernoteModelAdmin):
 
     def confirm_booking(self, queryset):
         queryset.update(confirmed=True)
+
+
+admin.site.register(Profile)
