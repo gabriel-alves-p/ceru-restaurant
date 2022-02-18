@@ -8,8 +8,8 @@ class Profile(models.Model):
     the User model to the Profile
     model in the database.
     """
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    date_of_birth = models.DateField()
+    user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
+    date_of_birth = models.DateField(null=True)
     created_on = models.DateField(auto_now_add=True)
 
     def __str__(self):
