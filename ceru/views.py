@@ -31,6 +31,18 @@ class DashboardView(TemplateView):
     User's dashboard page template view.
     """
     template_name = 'dashboard.html'
+    model = Booking
+
+    def get_queryset(self, *args, **kwargs):
+        """
+        Filters bookings and displays user's bookings
+        to user, and all bookings to admin.
+        """
+        if self.request.user.is_staff:
+            booking_list = Booking.objects.all()
+            return booking_list
+        else:
+            booking_list = Booking.objects.filter(user=self.request.user)
 
 
 class EditProfileView(TemplateView):
