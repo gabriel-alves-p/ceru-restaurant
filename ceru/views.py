@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views import generic
 from django.views.generic.base import TemplateView
+from django.views.generic import ListView
 from .models import Booking
 
 
@@ -26,7 +27,7 @@ class EditBookingView(TemplateView):
     template_name = 'edit_booking.html'
 
 
-class DashboardView(TemplateView):
+class DashboardView(ListView):
     """
     User's dashboard page template view.
     """

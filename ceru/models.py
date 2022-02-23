@@ -20,13 +20,14 @@ class Booking(models.Model):
     """
     A class to make bookings.
     """
+    user = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    email = models.ForeignKey(User, on_delete=models.CASCADE, related_name='booking')  # noqa
-    number_of_guests = models.IntegerField(blank=False)
+    email = models.CharField(max_length=50)
+    number_of_guests = models.IntegerField()
     date = models.DateField()
     time = models.TimeField()
-    requirements = models.CharField(max_length=255)
+    notes = models.CharField(max_length=255)
     created_on = models.DateField(auto_now_add=True)
 
     class Meta:
@@ -36,4 +37,26 @@ class Booking(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return f"Booking for {self.number_of_guests}, made by {self.email} on {self.created_on} for the {self.date} at {self.time}"  # noqa
+        return f"Booking for {self.number_of_guests}, made by {self.user} on {self.created_on} for the {self.date} at {self.time}"  # noqa
+
+# class Booking(models.Model):
+#     """
+#     A class to make bookings.
+#     """
+#     first_name = models.CharField(max_length=50)
+#     last_name = models.CharField(max_length=50)
+#     email = models.ForeignKey(User, on_delete=models.CASCADE, related_name='booking')  # noqa
+#     number_of_guests = models.IntegerField(blank=False)
+#     date = models.DateField()
+#     time = models.TimeField()
+#     requirements = models.CharField(max_length=255)
+#     created_on = models.DateField(auto_now_add=True)
+
+#     class Meta:
+#         """
+#         Helper class to order bookings order of inception.
+#         """
+#         ordering = ['-created_on']
+
+#     def __str__(self):
+#         return f"Booking for {self.number_of_guests}, made by {self.email} on {self.created_on} for the {self.date} at {self.time}"  # noqa
