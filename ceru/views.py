@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views import generic
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
+from django.contrib import messages
+from django.http import HttpResponseRedirect
 from .models import Booking
 
 
@@ -18,6 +20,22 @@ class BookingView(TemplateView):
     """
     template_name = 'booking_form.html'
     model = Booking
+
+    def post(self, request):
+        """
+        Handles post requests.
+        """
+        fname = request.POST.get("fname")
+        lname = request.POST.get("lname")
+        email = request.POST.get("email")
+        mobile = request.POST.get("mobile")
+        date = request.POST.get("date")
+        time = request.POST.get("time")
+        quantity = request.POST.get("quantity")
+        notes = request.POST.get("notes")
+
+        messages.add_message(request, messages.SUCCESS, f"Your booking has been acccepted.")
+        return HttpResponseRedirect(request.path)
 
 
 class EditBookingView(TemplateView):
