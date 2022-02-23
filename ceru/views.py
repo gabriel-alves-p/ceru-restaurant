@@ -33,8 +33,23 @@ class BookingView(TemplateView):
         time = request.POST.get("time")
         quantity = request.POST.get("quantity")
         notes = request.POST.get("notes")
+        user = request.user
 
-        messages.add_message(request, messages.SUCCESS, f"Your booking has been acccepted.")
+        booking = Booking.objects.create(
+            user=user,
+            first_name=fname,
+            last_name=lname,
+            email=email,
+            mobile=mobile,
+            date=date,
+            time=time,
+            number_of_guests=quantity,
+            notes=notes
+        )
+
+        booking.save()
+
+        messages.add_message(request, messages.SUCCESS, "Your booking has been acccepted.")
         return HttpResponseRedirect(request.path)
 
 

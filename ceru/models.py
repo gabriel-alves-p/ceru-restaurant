@@ -24,9 +24,10 @@ class Booking(models.Model):
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     email = models.CharField(max_length=50)
-    number_of_guests = models.IntegerField()
+    mobile = models.CharField(max_length=50, null=True)
     date = models.DateField()
     time = models.TimeField()
+    number_of_guests = models.IntegerField()
     notes = models.CharField(max_length=255)
     created_on = models.DateField(auto_now_add=True)
 
