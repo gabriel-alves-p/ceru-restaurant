@@ -1,1 +1,10 @@
-<h1>hello world</h1>
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+{% for booking in booking_list %}
+<p>{{ booking }}</p>
+{% endfor %}
+
+{% endblock content %}
