@@ -3,7 +3,6 @@ from django.views import generic
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
 from django.contrib import messages
-from django.http import HttpResponseRedirect
 from .models import Booking
 
 
@@ -49,8 +48,8 @@ class BookingView(TemplateView):
 
         booking.save()
 
-        messages.add_message(request, messages.SUCCESS, "Your booking has been acccepted.")
-        return HttpResponseRedirect(request.path)
+        messages.add_message(request, messages.SUCCESS, "Your booking has been acccepted.")  # noqa
+        return render(request, 'booking_form.html')
 
 
 class EditBookingView(TemplateView):
@@ -77,6 +76,7 @@ class DashboardView(ListView):
             return booking_list
         else:
             booking_list = Booking.objects.filter(user=self.request.user)
+            return booking_list
 
 
 class EditProfileView(TemplateView):
