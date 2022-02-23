@@ -28,7 +28,6 @@ class Booking(models.Model):
     time = models.TimeField()
     requirements = models.CharField(max_length=255)
     created_on = models.DateField(auto_now_add=True)
-    confirmed = models.BooleanField(default=False)
 
     class Meta:
         """
