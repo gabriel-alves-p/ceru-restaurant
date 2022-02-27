@@ -189,10 +189,33 @@ span {
     width: 100%;
     background: url('../images/hero.jpeg');
     background-size: cover;
-    margin-top: 50px;
 }
 
 #booking-form {
     font-family: 'Poppins', sans-serif;
     color: #FFE7BD;
+}
+
+#booking-reset-btn {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5340B;
+    color: #FFE7BD;
+}
+
+#booking-submit-btn {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FFE7BD;
+    color: #E5340B;
+}
+
+#booking-reset-btn:hover {
+    background-color: #FFE7BD;
+    color: #E5340B;
+    transition: 1s;
+}
+
+#booking-submit-btn:hover {
+    background-color: #0C5679;
+    color: #FFE7BD;
+    transition: 1s;
 }

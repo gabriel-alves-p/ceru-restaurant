@@ -13,8 +13,8 @@
         </div>
     </div>
     {% endif %}
-    <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center signup-form mt-5">
-        <div class="col-md-12 signup-row">
+    <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center signup-form py-5">
+        <div class="col-11 signup-row">
             <h1 class="my-5 text-center">Make a Booking</h1>
             <form action="{% url 'booking' %}" class="col" method="POST" id="booking-form">
                 {% csrf_token %}
@@ -57,7 +57,8 @@
                 <div class="row mb-3">
                     <label for="quantity" class="col-4 col-md-3 col-form-label text-center">Nº of guests</label>
                     <div class="col-7 col-md-8">
-                        <input type="number" class="form-control" id="quantity" min="1" max="6" name="quantity" required>
+                        <input type="number" class="form-control" id="quantity" min="1" max="6" name="quantity"
+                            required>
                     </div>
                 </div>
                 <div class="row mb-3">
@@ -66,9 +67,13 @@
                         <textarea id="requirements" class="form-control" style="height: 140px;" name="notes"></textarea>
                     </div>
                 </div>
-                <div class="col-11 m-auto">
-                    <button type="reset" class="btn btn-secondary btn-lg">Reset</button>
-                    <button type="submit" class="btn btn-secondary btn-lg">Book</button>
+                <div class="row mb-3 d-flex align-items-center justify-content-center">
+                    <div class="col-10 col-sm-3 my-2 align-items-center">
+                        <button type="reset" class="btn btn-secondary btn-lg" id="booking-reset-btn">Reset</button>
+                    </div>
+                    <div class="col-10 col-sm-3 my-2 align-items-center">
+                        <button type="submit" class="btn btn-secondary btn-lg" id="booking-submit-btn">Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
