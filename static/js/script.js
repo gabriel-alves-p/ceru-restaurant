@@ -1,4 +1,4 @@
-/* ------------------------------------ Code Credit https://www.codegrepper.com/code-examples/html/input+type%3Ddate+min+today */
+/* ------------------------------------ CODE CREDIT https://www.codegrepper.com/code-examples/html/input+type%3Ddate+min+today */
 
 var today = new Date();
 var dd = today.getDate();
@@ -14,4 +14,4 @@ if (mm < 10) {
 today = yyyy + '-' + mm + '-' + dd;
 document.getElementById("date").setAttribute("min", today);
 
-/* ------------------------------------ End Credit */
+/* ------------------------------------ END CREDIT */
