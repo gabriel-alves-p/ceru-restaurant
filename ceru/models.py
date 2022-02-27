@@ -38,7 +38,7 @@ class Booking(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return f"Booking for {self.number_of_guests}, made by {self.user} on {self.created_on} for the {self.date} at {self.time}"  # noqa
+        return f"Booking for {self.first_name} {self.last_name}, for {self.number_of_guests} guests, for the {self.date} at {self.time}, made on {self.created_on}"  # noqa
 
 # class Booking(models.Model):
 #     """
