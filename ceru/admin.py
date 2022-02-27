@@ -15,8 +15,5 @@ class BookingAdmin(SummernoteModelAdmin):
     search_fields = ('email',)
     actions = ['confirm_booking']
 
-    def confirm_booking(self, queryset):
-        queryset.update(confirmed=True)
-
 
 admin.site.register(Profile)

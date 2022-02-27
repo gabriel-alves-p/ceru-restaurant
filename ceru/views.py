@@ -65,6 +65,7 @@ class DashboardView(ListView):
     """
     template_name = 'dashboard.html'
     model = Booking
+    paginate_by = 6
 
     def get_queryset(self, *args, **kwargs):
         """
