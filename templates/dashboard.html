@@ -7,8 +7,9 @@
     <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center py-5">
         <div class="row signup-row">
             <h1 class="my-5 text-center">Your Bookings</h1>
+            {% if booking_list %}
             {% for booking in booking_list %}
-            <div class="card mx-auto" style="width: 18rem;">
+            <div class="card mx-auto mb-5" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Booking</h5>
                     <p class="card-text mb-2 text-muted">For {{ booking.last_name }}, {{ booking.first_name }}</p>
@@ -16,11 +17,14 @@
                     <p class="card-text">For the {{ booking.date }}</p>
                     <p class="card-text">At {{ booking.time }}</p>
                     <p class="card-text">Made on {{ booking.created_on }}</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="#" class="card-link"><button class="btn btn-secondary">Cancel Booking</button></a>
                 </div>
             </div>
             {% endfor %}
+            {% else %}
+            <p>You seem to not have any bookings yet.</p>
+            <button class="btn btn-secondary btn-lg">Book Here</button>
+            {% endif %}
             <!-- CODE CREDIT https://www.youtube.com/watch?v=3_3q_dE4_qs -->
             {% if is_paginated %}
             <div class="wrapper">
