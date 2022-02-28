@@ -1,9 +1,11 @@
 from django.shortcuts import render
 from django.views import generic
+from django.contrib.auth.models import User
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
 from django.contrib import messages
 from .models import Booking
+from .forms import UserUpdateForm
 
 
 class HomeTemplateView(TemplateView):
@@ -80,8 +82,21 @@ class DashboardView(ListView):
             return booking_list
 
 
-class EditProfileView(TemplateView):
-    """
-    User's dashboard page template view.
-    """
+class EditProfileView(ListView):
+    model = User
     template_name = 'edit_profile.html'
+
+    def edit_profile(self, request):
+        u_form = UserUpdateForm(instance=request.user)
+        context = {
+        "u_form": u_form
+        }
+
+        return render(request, 'edit_profile.html', context)
+
+
+# class EditProfileView(TemplateView)
+# #     """
+# #     User's dashboard page template view
+# #     """
+# #     template_name = 'edit_profile.html'
