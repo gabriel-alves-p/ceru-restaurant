@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from django.views import generic
 from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserChangeForm
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
 from django.contrib import messages
+from django.urls import reverse_lazy
 from .models import Booking
-from .forms import UserUpdateForm
+# from .forms import UserUpdateForm
 
 
 class HomeTemplateView(TemplateView):
@@ -81,22 +83,22 @@ class DashboardView(ListView):
             booking_list = Booking.objects.filter(user=self.request.user)
             return booking_list
 
+# class EditProfileView(ListView):
+#     model = User
+#     template_name = 'edit_profile.html'
 
-class EditProfileView(ListView):
-    model = User
+#     def edit_profile(self, request):
+#         u_form = UserUpdateForm(instance=request.user)
+#         context = {
+#         "u_form": u_form,
+#         }
+
+#         return render(request, 'edit_profile.html', context)
+
+class EditProfileView(generic.UpdateView):
+    form_class = UserChangeForm
     template_name = 'edit_profile.html'
+    success_url = reverse_lazy('home')
 
-    def edit_profile(self, request):
-        u_form = UserUpdateForm(instance=request.user)
-        context = {
-        "u_form": u_form
-        }
-
-        return render(request, 'edit_profile.html', context)
-
-
-# class EditProfileView(TemplateView)
-# #     """
-# #     User's dashboard page template view
-# #     """
-# #     template_name = 'edit_profile.html'
+    def get_object(self):
+        return self.request.user

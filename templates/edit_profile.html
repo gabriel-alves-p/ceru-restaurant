@@ -5,9 +5,10 @@
 
 <div class="mt-5">
     <legend class="my-5">Edit Profile</legend>
-    <form action="" method="POST">
+    <form method="POST">
         {% csrf_token %}
-        <button class="btn"></button>
+        {{ form.as_p }}
+        <button class="btn btn-secondary" type="submit">Update</button>
     </form>
 </div>
 
