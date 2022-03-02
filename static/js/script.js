@@ -1,3 +1,4 @@
+/* ------------------------------------ BOOKING_FORM.HTML */
 /* ------------------------------------ CODE CREDIT https://www.codegrepper.com/code-examples/html/input+type%3Ddate+min+today */
 
 var today = new Date();
