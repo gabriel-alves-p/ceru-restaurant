@@ -4,7 +4,7 @@ from django.views.generic.base import TemplateView
 from django.views.generic import ListView
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.forms import PasswordChangeForm
-from django.contrib import messages 
+from django.contrib import messages
 from django.urls import reverse_lazy
 from .models import Booking
 from .forms import EditProfileForm
@@ -102,5 +102,8 @@ class EditProfileView(generic.UpdateView):
 
 
 class EditPasswordView(PasswordChangeView):
+    """
+    View to allow users to update their passwords.
+    """
     form_class = PasswordChangeForm
     success_url = reverse_lazy('home')
