@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import UserChangeForm
 from django.contrib.auth.models import User
 from django import forms
+from .models import Booking
 
 
 class EditProfileForm(UserChangeForm):
@@ -20,3 +21,9 @@ class EditProfileForm(UserChangeForm):
         """
         model = User
         fields = ('username', 'email')
+
+
+class UpdateBookingForm(forms.ModelForm):
+    class Meta:
+        model = Booking
+        fields = ('first_name', 'last_name', 'email', 'mobile', 'date', 'time', 'number_of_guests', 'notes')  # noqa
