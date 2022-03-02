@@ -2,11 +2,12 @@ from django.shortcuts import render
 from django.views import generic
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
-from django.contrib import messages
+from django.contrib.auth.views import PasswordChangeView
+from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib import messages 
 from django.urls import reverse_lazy
 from .models import Booking
 from .forms import EditProfileForm
-# from .forms import UserUpdateForm
 
 
 class HomeTemplateView(TemplateView):
@@ -98,3 +99,8 @@ class EditProfileView(generic.UpdateView):
         Returns current user to template.
         """
         return self.request.user
+
+
+class EditPasswordView(PasswordChangeView):
+    form_class = PasswordChangeForm
+    success_url = reverse_lazy('home')
