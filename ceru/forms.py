@@ -7,6 +7,8 @@ class EditProfileForm(UserChangeForm):
     """
     Form to allow users
     to edit their profiles.
+    Adds Bootstrap classes "form-control"
+    to inputs.
     """
     username = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'class': 'form-control'}))  # noqa
     email = forms.EmailField(max_length=100, widget=forms.EmailInput(attrs={'class': 'form-control'}))  # noqa
