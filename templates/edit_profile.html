@@ -7,8 +7,9 @@
     <legend class="my-5">Edit Profile</legend>
     <form method="POST">
         {% csrf_token %}
+        <a href="{% url 'edit-password' %}">Change Password Here</a>
         {{ form | crispy }}
-        <button class="btn btn-secondary" type="submit">Update</button>
+        <button class="btn btn-secondary" type="submit">Update Details</button>
     </form>
 </div>
 
