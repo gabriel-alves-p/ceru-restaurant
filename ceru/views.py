@@ -7,7 +7,7 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib import messages
 from django.urls import reverse_lazy
 from .models import Booking
-from .forms import EditProfileForm
+from .forms import EditProfileForm, UpdateBookingForm
 
 
 class HomeTemplateView(TemplateView):
@@ -56,11 +56,16 @@ class BookingView(TemplateView):
         return render(request, 'booking_form.html')
 
 
-class EditBookingView(TemplateView):
-    """
-    Edit booking page template view.
-    """
-    template_name = 'edit_booking.html'
+# class EditBookingView(TemplateView):
+#     """
+#     Edit booking page template view.
+#     """
+#     template_name = 'edit_booking.html'
+
+def update_booking(request, booking_id):
+    booking = Booking.objects.get(pk=booking_id)
+    form = UpdateBookingForm(request.POST or None)
+    return render(request, 'edit_booking.html', {'booking': booking, 'form': form})  # noqa
 
 
 class DashboardView(ListView):

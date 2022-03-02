@@ -17,6 +17,7 @@
                     <p class="card-text">For the {{ booking.date }}</p>
                     <p class="card-text">At {{ booking.time }}</p>
                     <p class="card-text">Made on {{ booking.created_on }}</p>
+                    <a href="{% url 'edit-booking' booking.id %}" class="card-link"><button class="btn btn-secondary">Update Booking</button></a>
                     <a href="#" class="card-link"><button class="btn btn-secondary">Cancel Booking</button></a>
                 </div>
             </div>
