@@ -1,0 +1,5 @@
+<form id='delete' method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button id="delete-button" type="submit">Submit Deletion</button>
+</form>

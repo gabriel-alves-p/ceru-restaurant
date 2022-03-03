@@ -2,6 +2,7 @@ from django.contrib.auth.forms import UserChangeForm
 from django.contrib.auth.models import User
 from django import forms
 from .models import Booking
+from django.utils.safestring import mark_safe
 
 
 class EditProfileForm(UserChangeForm):
@@ -44,3 +45,10 @@ class UpdateBookingForm(forms.ModelForm):
         """
         model = Booking
         fields = ('first_name', 'last_name', 'email', 'mobile', 'date', 'time', 'number_of_guests', 'notes')  # noqa
+
+
+class DeleteUser(forms.Form):
+    delete_checkbox = forms.BooleanField(label=mark_safe('Are you sure you want to delete your account?'), required=True)  # noqa
+
+    def __init__(self, *args, **kwargs):
+        super(DeleteUser, self).__init__(*args, **kwargs)
