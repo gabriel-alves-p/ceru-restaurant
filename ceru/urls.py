@@ -9,4 +9,5 @@ urlpatterns = [
     path('dashboard/', views.DashboardView.as_view(), name='dashboard'),
     path('edit-profile/', views.EditProfileView.as_view(), name='edit-profile'),  # noqa
     path('password/', views.EditPasswordView.as_view(template_name='edit_password.html'), name='edit-password'),  # noqa
+    path('delete-account/', views.delete_user_view, name='delete-user'),
 ]

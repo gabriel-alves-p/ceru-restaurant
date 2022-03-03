@@ -1,13 +1,15 @@
 from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic.base import TemplateView
-from django.views.generic import ListView
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.forms import PasswordChangeForm
+from django.contrib.auth.models import User
+from django.contrib.auth import logout
 from django.contrib import messages
 from django.urls import reverse_lazy
+from django.http import HttpResponse
 from .models import Booking
-from .forms import EditProfileForm, UpdateBookingForm
+from .forms import EditProfileForm, UpdateBookingForm, DeleteUser
 
 
 class HomeTemplateView(TemplateView):
@@ -71,7 +73,7 @@ def update_booking(request, booking_id):
     return render(request, 'edit_booking.html', {'booking': booking, 'form': form})  # noqa
 
 
-class DashboardView(ListView):
+class DashboardView(generic.ListView):
     """
     User's dashboard page template view.
     """
@@ -115,3 +117,26 @@ class EditPasswordView(PasswordChangeView):
     """
     form_class = PasswordChangeForm
     success_url = reverse_lazy('home')
+
+
+def delete_user_view(request):
+    if request.user.is_authenticated:
+        if request.method == 'POST':
+            form = DeleteUser(request.POST)
+
+            if form.is_valid():
+                if request.POST["delete_checkbox"]:
+                    rem = User.objects.get(username=request.user)
+                    if rem is not None:
+                        rem.delete()
+                        logout(request)
+                        messages.info(request, "Your account has been deleted.")  # noqa
+                        return redirect("home")
+                    else:
+                        messages.info(request, "There was an error.")
+        else:
+            form = DeleteUser()
+        context = {'form': form}
+        return render(request, 'delete_account.html', context)
+    if request.user.is_anonymous:
+        return HttpResponse(render(request, "401.html"), status=401)
