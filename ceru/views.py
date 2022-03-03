@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views import generic
 from django.views.generic.base import TemplateView
 from django.views.generic import ListView
@@ -64,7 +64,10 @@ class BookingView(TemplateView):
 
 def update_booking(request, booking_id):
     booking = Booking.objects.get(pk=booking_id)
-    form = UpdateBookingForm(request.POST or None)
+    form = UpdateBookingForm(request.POST or None, instance=booking)
+    if form.is_valid():
+        form.save()
+        return redirect('dashboard')
     return render(request, 'edit_booking.html', {'booking': booking, 'form': form})  # noqa
 
 
