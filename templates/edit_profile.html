@@ -1,5 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/edit_profile_style.css' %}">
+{% endblock stylesheet %}
 {% block content %}
 {% load crispy_forms_tags %}
 
