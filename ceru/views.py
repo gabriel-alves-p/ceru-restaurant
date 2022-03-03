@@ -73,6 +73,12 @@ def update_booking(request, booking_id):
     return render(request, 'edit_booking.html', {'booking': booking, 'form': form})  # noqa
 
 
+def delete_booking(request, booking_id):
+    booking = Booking.objects.get(pk=booking_id)
+    booking.delete()
+    return redirect('dashboard')
+
+
 class DashboardView(generic.ListView):
     """
     User's dashboard page template view.

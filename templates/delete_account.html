@@ -1,5 +1,12 @@
-<form id='delete' method="POST">
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+<form id='delete' method="POST" class="mt-5">
     {% csrf_token %}
-    {{ form.as_p }}
-    <button id="delete-button" type="submit">Submit Deletion</button>
+    {{ form | crispy }}
+    <button id="delete-button" type="submit" class="btn btn-secondary">Submit Deletion</button>
 </form>
+
+{% endblock content %}
