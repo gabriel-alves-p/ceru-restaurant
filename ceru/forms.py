@@ -24,6 +24,23 @@ class EditProfileForm(UserChangeForm):
 
 
 class UpdateBookingForm(forms.ModelForm):
+    """
+    Form to allow users to edit and
+    save their bookings in the database.
+    """
+    first_name = forms.CharField(max_length=50, required=True)
+    last_name = forms.CharField(max_length=50, required=True)
+    email = forms.EmailField(max_length=100, required=True)
+    mobile = forms.CharField(max_length=20, required=False)
+    date = forms.DateField(required=True)
+    time = forms.TimeField(required=True)
+    number_of_guests = forms.NumberInput()
+    notes = forms.CharField(max_length=245, required=False)
+
     class Meta:
+        """
+        Meta class to set model used in form
+        and fields to display in form.
+        """
         model = Booking
         fields = ('first_name', 'last_name', 'email', 'mobile', 'date', 'time', 'number_of_guests', 'notes')  # noqa
