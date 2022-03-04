@@ -2,3 +2,19 @@
 #div_id_password {
     display: none !important;
 }
+
+.change-password-link {
+    color: #FFE7BD;
+}
+
+.change-password-link:hover {
+    color: #E5340B;
+}
+
+.account-deletion-link {
+    color: #E5340B;
+}
+
+.account-deletion-link:hover {
+    color: #FFE7BD;
+}

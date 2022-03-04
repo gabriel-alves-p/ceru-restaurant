@@ -6,15 +6,24 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<div class="mt-5">
-    <legend class="my-5">Edit Profile</legend>
-    <form method="POST">
-        {% csrf_token %}
-        <a href="{% url 'edit-password' %}">Change Password Here</a>
-        {{ form | crispy }}
-        <button class="btn btn-secondary" type="submit">Update Details</button>
-        <a href="{% url 'delete-account' %}">Account Deletion</a>
-    </form>
-</div>
+<header id="signup-hero-image">
+    <div class="container d-flex align-items-center justify-content-center signup-form mt-5">
+        <div class="row d-flex align-items-center signup-row">
+            <div class="col-12 col-md-8 pt-5 pt-md-0">
+                <h3 class="pt-2 pt-md-0 text-uppercase">Edit Profile</h3>
+                <p>You can update your personal account details on this page.</p>
+            </div>
+            <div class="col-7 col-sm-6 col-md-4 pb-5 mx-auto py-md-5">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <a href="{% url 'edit-password' %}" class="change-password-link pt-4">Change Password Here</a>
+                <button class="btn btn-signup right mt-4" type="submit">Update Details</button>
+            </form>
+            </div>
+            <a href="{% url 'delete-account' %}" class="account-deletion-link mb-2">Account Deletion</a>
+        </div>
+    </div>
+</header>
 
 {% endblock content %}
