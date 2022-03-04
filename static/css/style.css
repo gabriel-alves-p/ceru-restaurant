@@ -185,7 +185,7 @@ span {
 
 /* ---------------------------------------------------------------------------------- BOOKING_FORM.HTML */
 #booking-hero-image {
-    height: auto;
+    height: 780px;
     width: 100%;
     background: url('../images/hero.jpeg');
     background-size: cover;
