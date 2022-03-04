@@ -61,11 +61,17 @@
             <div class="col-md-6 justify-content-center align-items-center about-us-text">
                 <h2>Menus</h2>
                 <p>
-                    Discover below our authentic menus that encapture the soul of a true Diner.
+                    Discover below our authentic menus that encapture the soul of a true diner.
                 </p>
-                <button type="button" class="btn btn-secondary btn-lg menu-btn">Food Menu</button>
-                <button type="button" class="btn btn-secondary btn-lg menu-btn">Drinks Menu</button>
-                <button type="button" class="btn btn-secondary btn-lg menu-btn">Kids Menu</button>
+                <a href="{% url 'menus' %}">
+                    <button type="button" class="btn btn-secondary btn-lg menu-btn">Food Menu</button>
+                </a>
+                <a href="{% url 'menus' %}#drinks">
+                    <button type="button" class="btn btn-secondary btn-lg menu-btn">Drinks Menu</button>
+                </a>
+                <a href="{% url 'menus' %}#kids">
+                    <button type="button" class="btn btn-secondary btn-lg menu-btn">Kids Menu</button>
+                </a>
             </div>
             <div class="col-md-6 d-flex justify-content-center carousel-col">
                 <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
