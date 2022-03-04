@@ -58,11 +58,12 @@ class BookingView(TemplateView):
         return render(request, 'booking_form.html')
 
 
-# class EditBookingView(TemplateView):
-#     """
-#     Edit booking page template view.
-#     """
-#     template_name = 'edit_booking.html'
+class MenuView(TemplateView):
+    """
+    Edit booking page template view.
+    """
+    template_name = 'menus.html'
+
 
 def update_booking(request, booking_id):
     booking = Booking.objects.get(pk=booking_id)
