@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- MENU PAGE -->
+<article>
+    <div class="container-fluid mt-5">
+        <div class="col-md-7 pt-4 m-auto">
+            <!-- FIRST PAGE -->
+            <img src="{% static 'images/menu_page1.webp' %}" alt="first page of our four page menu" width="100%">
+        </div>
+        <div class="col-md-7 m-auto">
+            <!-- SECOND PAGE -->
+            <img src="{% static 'images/menu_page2.webp' %}" alt="second page of our four page menu" width="100%">
+        </div>
+        <div class="col-md-7 m-auto" id="kids">
+            <!-- THIRD PAGE -->
+            <img src="{% static 'images/menu_page3.webp' %}" alt="third page of our four page menu" width="100%">
+        </div>
+        <div class="col-md-7 m-auto" id="drinks">
+            <!-- FOURTH PAGE -->
+            <img src="{% static 'images/menu_page4.webp' %}" alt="fourth page of our four page menu" width="100%">
+        </div>
+    </div>
+</article>
+
+{% endblock content %}
