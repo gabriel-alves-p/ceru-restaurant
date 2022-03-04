@@ -3,10 +3,25 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
-<form id='delete' method="POST" class="mt-5">
-    {% csrf_token %}
-    {{ form | crispy }}
-    <button id="delete-button" type="submit" class="btn btn-secondary">Submit Deletion</button>
-</form>
+<header id="signup-hero-image">
+    <div class="container d-flex align-items-center justify-content-center signup-form mt-5">
+        <div class="row d-flex align-items-center signup-row">
+            <div class="col-12 pt-5 pt-md-0">
+                <h3 class="mt-3 mt-md-5 text-uppercase text-center">delete account</h3>
+                <p class="mt-4 text-center">Deleting your account is final.</p>
+                <p class="text-center">
+                    Delete or <a href="{% url 'home' %}" class="return-home-link">return home</a>?
+                </p>
+            </div>
+            <div class="col-10 col-md-8 col-lg-6 py-3 mx-auto">
+                <form method="POST" id="account-deletion-form" class="mx-auto">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <button class="btn btn-signup right mt-4 mx-auto" type="submit">Delete Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
 
 {% endblock content %}

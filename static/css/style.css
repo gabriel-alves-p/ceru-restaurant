@@ -227,3 +227,12 @@ span {
     color: #FFE7BD;
     margin-top: 5px;
 }
+
+.return-home-link {
+    color: #FFE7BD;
+}
+
+/* ---------------------------------------------------------------------------------- DELETE_ACCOUNT.HTML */
+.return-home-link:hover {
+    color: #E5340B;
+}
