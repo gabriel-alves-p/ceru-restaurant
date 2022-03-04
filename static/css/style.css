@@ -162,7 +162,7 @@ span {
 
 /* ---------------------------------------------------------------------------------- SIGNUP.HTML / LOGIN.HTML / LOGOUT.HTML */
 #signup-hero-image {
-    height: 600px;
+    height: 780px;
     width: 100%;
     background: url('../images/hero2.png') no-repeat center center;
     background-size: cover;
@@ -223,3 +223,7 @@ span {
 /* ---------------------------------------------------------------------------------- EDIT_BOOKING.HTML */
 /* ---------------------------------------------------------------------------------- DASHBOARD.HTML */
 /* ---------------------------------------------------------------------------------- EDIT_PASSWORD.HTML */
+#password-change-form li {
+    color: #FFE7BD;
+    margin-top: 5px;
+}
