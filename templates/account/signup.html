@@ -4,6 +4,7 @@
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 {% block content %}
 {% load crispy_forms_tags %}
+
 <!-- SIGN UP FORM -->
 <header id="signup-hero-image">
   <div class="container d-flex align-items-center justify-content-center signup-form mt-5">
@@ -21,10 +22,11 @@
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
-          <button class="btn btn-signup right mt-4" type="submit">{% trans "Sign Up" %} &raquo;</button>
+          <button class="btn btn-signup right mt-4" type="submit">{% trans "Sign Up" %}</button>
         </form>
       </div>
     </div>
   </div>
 </header>
+
 {% endblock content %}
