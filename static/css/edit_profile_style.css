@@ -4,17 +4,17 @@
 }
 
 .change-password-link {
-    color: #FFE7BD;
+    color: #FFE7BD !important;
 }
 
 .change-password-link:hover {
-    color: #E5340B;
+    color: #E5340B !important;
 }
 
 .account-deletion-link {
-    color: #E5340B;
+    color: #E5340B !important;
 }
 
 .account-deletion-link:hover {
-    color: #FFE7BD;
+    color: #FFE7BD !important;
 }

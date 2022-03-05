@@ -185,7 +185,7 @@ span {
 
 /* ---------------------------------------------------------------------------------- BOOKING_FORM.HTML */
 #booking-hero-image {
-    height: auto;
+    min-height: 780px;
     width: 100%;
     background: url('../images/hero.jpeg');
     background-size: cover;
@@ -272,6 +272,21 @@ h5 {
 
 .page-item {
     align-items: center;
+}
+
+.booking-redirect1 {
+    align-items: center;
+}
+
+.booking-redirect {
+    background-color: #E5340B;
+    color: #FFE7BD;
+}
+
+.booking-redirect:hover {
+    background-color: #FFE7BD;
+    color: #E5340B;
+    transition: 1s;
 }
 
 /* ---------------------------------------------------------------------------------- EDIT_PASSWORD.HTML */
