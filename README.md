@@ -20,9 +20,6 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 
 # CERU - AUTHENTIC AMERICAN DINER
 
-*replace the **PROJECT NAME** header with your project's name*
-- Screenshot of logo/navigation of mobile deployed site
-- Include a link to deployed project with one line explanation of project
 
 
 ## Author
@@ -30,12 +27,12 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 Gabriel Alves
 You can visit my GitHub [here](https://github.com/gabriel-alves-p).
 
-
 ## Project Overview
 - Include a picture of site that shows it in responsive states and links to deployed code: http://ami.responsivedesign.is/
-- One or two paragraphs providing an overview of your project.
-- Write this as a sales pitch or commercial making users want to purchase your website.
-- Include a link to your deployed website
+
+- This project was created with the goal of creating a booking system for a 
+
+- Please view my website [here](https://ceru-restaurant.herokuapp.com/)
 
 
 # UX
