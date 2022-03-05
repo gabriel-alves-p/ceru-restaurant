@@ -11,14 +11,20 @@
             {% for booking in booking_list %}
             <div class="card mx-auto mb-5" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">Booking</h5>
+                    <h5 class="card-title text-uppercase">Booking</h5>
                     <p class="card-text mb-2 text-muted">For {{ booking.last_name }}, {{ booking.first_name }}</p>
                     <p class="card-text">For {{ booking.number_of_guests }} people</p>
                     <p class="card-text">For the {{ booking.date }}</p>
                     <p class="card-text">At {{ booking.time }}</p>
                     <p class="card-text">Made on {{ booking.created_on }}</p>
-                    <a href="{% url 'edit-booking' booking.id %}" class="card-link"><button class="btn btn-outline-secondary">Update Booking</button></a>
-                    <a href="{% url 'delete-booking' booking.id %}" class="card-link"><button class="btn btn-outline-danger" type="submit" onclick="return confirm('Are you sure?')">Cancel Booking</button></a>
+                    <a href="{% url 'edit-booking' booking.id %}" class="link">
+                        <button class="btn btn-secondary update-link">Update Booking</button>
+                    </a>
+                    <a href="{% url 'delete-booking' booking.id %}" class="link">
+                        <button class="btn btn-secondary cancel-link" onclick="return confirm('Are you sure?')">
+                            Cancel Booking
+                        </button>
+                    </a>
                 </div>
             </div>
             {% endfor %}
@@ -32,13 +38,15 @@
                 <nav aria-label="page navigation">
                     <ul class="pagination">
                         {% if page_obj.has_previous %}
-                        <li class="page-item"><a href="?page={{page_obj.previous_page_number}}" class="page-link">Previous</a></li>
+                        <li class="page-item"><a href="?page={{page_obj.previous_page_number}}"
+                                class="page-link">Previous</a></li>
                         {% endif %}
                         {% for number in page_obj.paginator.page_range %}
                         <li class="page-item"><a href="?page={{number}}" class="page-link">{{ number }}</a></li>
                         {% endfor %}
                         {% if page_obj.has_next %}
-                        <li class="page-item"><a href="?page={{page_obj.next_page_number}}" class="page-link">Next</a></li>
+                        <li class="page-item"><a href="?page={{page_obj.next_page_number}}" class="page-link">Next</a>
+                        </li>
                         {% endif %}
                     </ul>
                 </nav>

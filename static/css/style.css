@@ -185,7 +185,7 @@ span {
 
 /* ---------------------------------------------------------------------------------- BOOKING_FORM.HTML */
 #booking-hero-image {
-    height: 780px;
+    height: auto;
     width: 100%;
     background: url('../images/hero.jpeg');
     background-size: cover;
@@ -222,6 +222,50 @@ span {
 
 /* ---------------------------------------------------------------------------------- EDIT_BOOKING.HTML */
 /* ---------------------------------------------------------------------------------- DASHBOARD.HTML */
+.card {
+    padding: 0;
+}
+
+.card-body {
+    background-color: #FFE7BD;
+}
+
+.card-body>p,
+a {
+    color: #E5340B !important;
+}
+
+h5 {
+    color: #0C5679;
+}
+
+.link {
+    width: 100%;
+}
+
+.update-link,
+.cancel-link {
+    width: 70%;
+    margin: 0 0 20px 35px;
+}
+
+.update-link {
+    background-color: #0C5679;
+    color: #FFE7BD;
+}
+
+.update-link:hover,
+.cancel-link:hover {
+    background-color: #FFE7BD;
+    color: #E5340B;
+    transition: 1s;
+}
+
+.cancel-link {
+    background-color: #E5340B;
+    color: #FFE7BD;
+}
+
 /* ---------------------------------------------------------------------------------- EDIT_PASSWORD.HTML */
 #password-change-form li {
     color: #FFE7BD;
