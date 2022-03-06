@@ -30,9 +30,9 @@ You can visit my GitHub [here](https://github.com/gabriel-alves-p).
 ## Project Overview
 - Include a picture of site that shows it in responsive states and links to deployed code: http://ami.responsivedesign.is/
 
-- This project was created with the goal of creating a booking system for a 
+This project was incepted with the goal of creating a booking system for a Diner to increase their revenue. It achieves this goal by means of a 'sing-up' and 'book' system, where the user can sign-up and create an account, which grants them access to the booking form. Users are allowed the freedom to view, edit, and cancel their bookings as well as their own accounts with the Diner if they wish to do so, following the C.R.U.D. Operations. The app also aims to reflect the diner itself in its color pallette and vintage feel, not too serious and definetely what a web application would look like if the internet existed in 1970. 
 
-- Please view my website [here](https://ceru-restaurant.herokuapp.com/)
+You can view my web app [here](https://ceru-restaurant.herokuapp.com/).
 
 
 # UX
