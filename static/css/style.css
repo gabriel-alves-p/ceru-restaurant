@@ -77,7 +77,7 @@ span {
 #hero-image {
     height: 600px;
     width: 100%;
-    background: url('static/images/hero3.webp') no-repeat center center;
+    background: url('https://res.cloudinary.com/gabrielmpalves/image/upload/v1646692088/hero3_g1tzsz.jpg') no-repeat center center;
     background-size: cover;
     color: #FFE7BD;
     margin-top: 50px;
@@ -164,7 +164,7 @@ span {
 #signup-hero-image {
     height: 780px;
     width: 100%;
-    background: url('/static/images/hero2.webp') no-repeat center center;
+    background: url('https://res.cloudinary.com/gabrielmpalves/image/upload/v1646692079/hero2_dns6ls.jpg') no-repeat center center;
     background-size: cover;
     color: #FFE7BD;
     margin-top: 50px;
@@ -187,7 +187,7 @@ span {
 #booking-hero-image {
     min-height: 780px;
     width: 100%;
-    background: url('/static/images/hero.webp');
+    background: url('https://res.cloudinary.com/gabrielmpalves/image/upload/v1646692063/hero_jynfoe.jpg');
     background-size: cover;
 }
 
