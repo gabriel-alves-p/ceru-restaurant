@@ -12,6 +12,7 @@ from .models import Booking
 from .forms import EditProfileForm, UpdateBookingForm, DeleteUser
 
 
+# --------------------------------------------------- CLASS-BASED VIEWS
 class HomeTemplateView(TemplateView):
     """
     Home page template view.
@@ -65,21 +66,6 @@ class MenuView(TemplateView):
     template_name = 'menus.html'
 
 
-def update_booking(request, booking_id):
-    booking = Booking.objects.get(pk=booking_id)
-    form = UpdateBookingForm(request.POST or None, instance=booking)
-    if form.is_valid():
-        form.save()
-        return redirect('dashboard')
-    return render(request, 'edit_booking.html', {'booking': booking, 'form': form})  # noqa
-
-
-def delete_booking(request, booking_id):
-    booking = Booking.objects.get(pk=booking_id)
-    booking.delete()
-    return redirect('dashboard')
-
-
 class DashboardView(generic.ListView):
     """
     User's dashboard page template view.
@@ -126,7 +112,13 @@ class EditPasswordView(PasswordChangeView):
     success_url = reverse_lazy('home')
 
 
+# --------------------------------------------------- FUNCTION-BASED VIEWS
 def delete_user_view(request):
+    """
+    Function based view used to delete
+    a user's account if they wish to do
+    so themselves.
+    """
     if request.user.is_authenticated:
         if request.method == 'POST':
             form = DeleteUser(request.POST)
@@ -147,3 +139,26 @@ def delete_user_view(request):
         return render(request, 'delete_account.html', context)
     if request.user.is_anonymous:
         return HttpResponse(render(request, "401.html"), status=401)
+
+
+def update_booking(request, booking_id):
+    """
+    Function based view to allow user
+    to update a booking that has been made.
+    """
+    booking = Booking.objects.get(pk=booking_id)
+    form = UpdateBookingForm(request.POST or None, instance=booking)
+    if form.is_valid():
+        form.save()
+        return redirect('dashboard')
+    return render(request, 'edit_booking.html', {'booking': booking, 'form': form})  # noqa
+
+
+def delete_booking(request, booking_id):
+    """
+    Function based view to allow user
+    to delete a booking that has been made.
+    """
+    booking = Booking.objects.get(pk=booking_id)
+    booking.delete()
+    return redirect('dashboard')
