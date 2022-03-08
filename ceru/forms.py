@@ -12,8 +12,8 @@ class EditProfileForm(UserChangeForm):
     Adds Bootstrap classes "form-control"
     to inputs.
     """
-    username = forms.CharField(max_length=50, widget=forms.TextInput(attrs={'class': 'form-control'}))  # noqa
-    email = forms.EmailField(max_length=100, widget=forms.EmailInput(attrs={'class': 'form-control'}))  # noqa
+    username = forms.CharField(max_length=50, required=True)
+    email = forms.EmailField(max_length=100, required=True)
 
     class Meta:
         """
@@ -33,7 +33,7 @@ class UpdateBookingForm(forms.ModelForm):
     last_name = forms.CharField(max_length=50, required=True)
     email = forms.EmailField(max_length=100, required=True)
     mobile = forms.CharField(max_length=20, required=False)
-    date = forms.DateField(required=True)
+    date = forms.DateField(required=True, widget=forms.DateField())
     time = forms.TimeField(required=True)
     number_of_guests = forms.NumberInput()
     notes = forms.CharField(max_length=245, required=False)
@@ -47,8 +47,10 @@ class UpdateBookingForm(forms.ModelForm):
         fields = ('first_name', 'last_name', 'email', 'mobile', 'date', 'time', 'number_of_guests', 'notes')  # noqa
 
 
+# CODE CREDIT https://stackoverflow.com/questions/41653346/remove-user-in-django  # noqa
 class DeleteUser(forms.Form):
     delete_checkbox = forms.BooleanField(label=mark_safe('Are you sure you want to delete your account?'), required=True)  # noqa
 
     def __init__(self, *args, **kwargs):
         super(DeleteUser, self).__init__(*args, **kwargs)
+# END CREDIT
