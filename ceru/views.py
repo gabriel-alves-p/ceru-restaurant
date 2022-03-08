@@ -55,7 +55,6 @@ class BookingView(TemplateView):
 
         booking.save()
 
-        messages.add_message(request, messages.SUCCESS, "Your booking has been acccepted.")  # noqa
         return render(request, 'booking_form.html')
 
 
