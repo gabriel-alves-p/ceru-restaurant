@@ -33,7 +33,7 @@ class UpdateBookingForm(forms.ModelForm):
     last_name = forms.CharField(max_length=50, required=True)
     email = forms.EmailField(max_length=100, required=True)
     mobile = forms.CharField(max_length=20, required=False)
-    date = forms.DateField(required=True, widget=forms.DateField())
+    date = forms.DateField(required=True)
     time = forms.TimeField(required=True)
     number_of_guests = forms.NumberInput()
     notes = forms.CharField(max_length=245, required=False)
@@ -49,6 +49,10 @@ class UpdateBookingForm(forms.ModelForm):
 
 # CODE CREDIT https://stackoverflow.com/questions/41653346/remove-user-in-django  # noqa
 class DeleteUser(forms.Form):
+    """
+    Class to define checkbox required
+    to confirm account deletion.
+    """
     delete_checkbox = forms.BooleanField(label=mark_safe('Are you sure you want to delete your account?'), required=True)  # noqa
 
     def __init__(self, *args, **kwargs):
