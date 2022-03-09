@@ -37,7 +37,6 @@ You can view my web application [here](https://ceru-restaurant.herokuapp.com/).
 
 ## UX
 
-
 ### Colors
 
 Below you can find the colors chosen for this web application.
