@@ -97,13 +97,16 @@ Explain why you used certain icons and images on your site
 - call out any overrides you did for bootstrap styles or the framework you used,  even if they are fonts and colors, perhaps lead assessors to the file of interest in your repo 
 
 ### Custom Javascript
-- call attention to any custom javascript you created to help your User Experience you can organize this by functions or files
+
+Minimal JavaScript was used for this project. All of the JavaScript code written can be found at "static/js/script.js" and it was implemented on the template files "booking-form.html", and "edit-booking-form.html" to ensure the browser does not allow the user to select a date in the past, only from today onwards.
+
+Below you can find a snippet of the JavaScript code used.
+<img width="506" alt="javascript-used" src="https://user-images.githubusercontent.com/82375381/157510418-f6cfab6b-5956-4627-8625-719f7c3ae3f7.png">
+
 
 ## Wireframes
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in a separate directory), or  hosted elsewhere online and can be in any format that is viewable inside the browser.
-
-- You should minimally have wireframes for desktop and mobile. Adding a Tablet view will help you get into merit and distinction.
+All wireframes created in the planning stages of this project can be found [here](https://drive.google.com/file/d/1-mW-y9yUtgK-bjodFbpzW5RcX3XePAsj/view?usp=sharing).
 
 
 # Agile Process
