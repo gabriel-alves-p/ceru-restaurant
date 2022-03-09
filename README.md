@@ -20,20 +20,23 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 
 # CERU - AUTHENTIC AMERICAN DINER
 
-- Include a picture of site that shows it in responsive states and links to deployed code: http://ami.responsivedesign.is/
+<img width="977" alt="responsive-app" src="https://user-images.githubusercontent.com/82375381/157510961-1f9b70d1-6980-4699-9196-c7417c2ca87a.png">
+
 
 ## Author
 
 Gabriel Alves
+
 You can visit my GitHub page [here](https://github.com/gabriel-alves-p).
 
 ## Project Overview
 
-This project was incepted with the goal of creating a 'hassle-free' booking system for a Diner to increase their revenue. It achieves this goal by means of two models; a "user", and a "booking" system. 
-The user can very easily sign-up for an account, which only then grants them access to the booking form. Users are also allowed the freedom to view, edit, and cancel their bookings as well as their own personal accounts with the Diner if they wish to do so, following the C.R.U.D. Operations (Create, Read, Update, Delete). 
+This project was incepted with the goal of creating a 'hassle-free' booking system for a Diner to increase their revenue. It achieves this goal by means of two models; a "user", and a "booking" system.
+The user can very easily sign-up for an account, which only then grants them access to the booking form. Users are also allowed the freedom to view, edit, and cancel their bookings as well as their own personal accounts with the Diner if they wish to do so, following the C.R.U.D. Operations (Create, Read, Update, Delete).
+
 The app also aims to reflect the diner itself in its color pallette and vintage feel, friendly and straight out of the 70s.
 
-You can view my web application [here](https://ceru-restaurant.herokuapp.com/).
+You can view this web application [here](https://ceru-restaurant.herokuapp.com/).
 
 ## UX
 
