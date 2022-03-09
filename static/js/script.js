@@ -13,6 +13,6 @@ if (mm < 10) {
 }
 
 today = yyyy + '-' + mm + '-' + dd;
-document.getElementById("date").setAttribute("min", today);
+document.getElementById("id_date").setAttribute("min", today);
 
 /* ------------------------------------ END CREDIT */
