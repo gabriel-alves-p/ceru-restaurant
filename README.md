@@ -37,11 +37,19 @@ You can view my web application [here](https://ceru-restaurant.herokuapp.com/).
 
 ## UX
 
-
 ### Colors
 
-Below you can find the colors used on my web application.
+Below you can find the colors chosen for this web application.
+- #0C5679 Blue Sapphire
+- #FFE7BD Peach
+- #E5340B Vermilion
+- #F28A0F Tangerine
+<img width="1150" alt="color-palette" src="https://user-images.githubusercontent.com/82375381/157326869-4be966f8-7250-4436-9a49-a7f4e35db8ba.png">
 
+Below you can find the inspiration for the colors chosen for this web application.
+<img width="338" alt="color-palette-inspiration" src="https://user-images.githubusercontent.com/82375381/157326981-784b9502-2381-435a-b9b8-2a33d2bae8dc.png">
+
+I chose these colors and inspiration based on the decade the Diner was built, the 1970s. The inspiration was taken from a popular home wallpaper pattern and color chosen by families in the United States. These colors are nostalgic and retro, which impacts the target audience, whom would ideally be interested, or have grown up in The Golden Era of the United States.
 
 ### Typography
 
