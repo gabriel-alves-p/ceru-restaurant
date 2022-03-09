@@ -65,8 +65,6 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # CRISPY FORMS BOOTSTRAP TEMPLATE
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-X_FRAME_OPTIONS = "ALLOW-FROM http://ami.responsivedesign.is/"
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
