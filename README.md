@@ -477,11 +477,14 @@ Activity entries are used by events, places and filtering.
 The reading/writing of the activities table is housed in the [what2do2day/activities/views.py](what2do2day/activities/views.py) file.
 
 ### CRUD Diagrams
-This is if you want to go for distinction.  You can also have CRUD diagrams to show them visually how the model is used in your site. 
 
-I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive to create the screenshot below
+- CRUD diagram for User model below.
 
-![image](https://user-images.githubusercontent.com/23039742/154406188-c9beb57a-2fd1-4f26-a8ed-bee320e46e3d.png)
+<img width="828" alt="crud-diagram-user-model" src="https://user-images.githubusercontent.com/82375381/157767090-311bd67f-21db-48c4-a2ec-9c94e4b1227c.png">
+
+- CRUD diagram for Booking model below.
+
+<img width="825" alt="Screenshot 2022-03-10 at 19 49 43" src="https://user-images.githubusercontent.com/82375381/157768100-3dc24a52-cdf7-4c31-aa25-2e30368302a3.png">
 
 
 ## Features
