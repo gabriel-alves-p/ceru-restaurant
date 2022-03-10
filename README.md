@@ -22,7 +22,6 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 
 <img width="977" alt="responsive-app" src="https://user-images.githubusercontent.com/82375381/157510961-1f9b70d1-6980-4699-9196-c7417c2ca87a.png">
 
-
 ## Author
 
 Gabriel Alves
@@ -37,6 +36,10 @@ The user can very easily sign-up for an account, which only then grants them acc
 The app also aims to reflect the diner itself in its color pallette and vintage feel, friendly and straight out of the 70s.
 
 You can view this web application [here](https://ceru-restaurant.herokuapp.com/).
+
+## Technologies
+
+- list out techs
 
 ## UX
 
@@ -135,7 +138,7 @@ All wireframes created in the planning stages of this project can be found [here
 
 I followed Agile process and used GitHub issues to store my User Stories. They were created from the Epics above and were prioritized between "Must have", "Should have", and "Could have", according to the Agile Process taught in Code Institute lessons.
 
-You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/1) or by clicking on 'Issues' on this repository on GitHub.
+You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/1) or by clicking on 'Projects' and then 'User Stories' on this repository on GitHub.
 
 ## Product Backlog
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/085f3a8e344a4cf28b5b5355399abcc1/?child=last
@@ -260,8 +263,10 @@ Create Custom Issue Template and a milestone in git hub.[Here's a brief overview
 If you managed to write jasmine tests or some django tests, note those files out here and how to run them.  I only did this in my last project as I didn't have the time or energy to learn how to write tests. https://github.com/maliahavlicek/ms4_challenger/blob/master/documentation/TESTING.md is my write up about those and how I ran them, but a simple test I'd recommend is authentication and any views you limit to superusers or logged in users
 
 https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/test_views.py 
+
 ## Defects of Note
-Some defects are more pesky than others. Highlight 3-5 of the bugs that drove you the most nuts and how you finally ended up resolving them.
+
+I kept track of my bugs in real time. You can view them and their details [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/2) or by clicking on the 'Projects' and then 'Bug Report' on this repository on GitHub.
 
 
 ### Outstanding Defects
