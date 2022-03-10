@@ -97,6 +97,9 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 > - A section with a title containing a Contact Us form (first name, last name, email, mobile phone, and message inputs and a submit button).
 > - A footer with opening times, address, social media links. Shared across all pages.
 
+#### Menus Page
+> - Photoshopped menu as HTML image elements.
+
 #### Sign Up Page
 > - Hero image chosen for all pages account related.
 > - A section with a title, two paragraphs explaining the page, a link to take the user to the login page.
@@ -146,6 +149,29 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 > - A section with a title.
 > - A pre-filled booking form using crispy forms (first name, last name, email, mobile phone, date, time, number of guests, and requirements inputs, and a submit button).
 
+### Structure Plane
+
+I separated the structure planning into pages and used a format of prioritization as I iterated through the pages:
+- Use base.html template to have the same navigation bar and footer across all pages.
+- Use Scope plan from each page (above) and organize each item in the page from top to bottom according to priority and user intuitiveness.
+- Iterate through this format on each page to define the structure of the web app and ensure all pages look related.
+
+### Skeleton Plane
+
+Decisions regarding how the information would be displayed were made by splitting the pages into 4 categories:
+- Home (home page).
+- Menus (menus page).
+- Accounts (sign up, login, logout, edit account, edit password, and delete account pages).
+- Bookings (make a booking, view bookings, and edit booking pages).
+
+I then ensured all pages that shared the same category looked very similar to each other but slightly different to the other categories, whilst ensuring it still looked part of the same website. This process was followed to make styling easier and promote intuitiveness for the user while navigating the pages.
+
+I then created:
+
+#### Balsamiq Wireframes
+
+All wireframes created in the planning stages of this project can be found [here](https://drive.google.com/file/d/1-mW-y9yUtgK-bjodFbpzW5RcX3XePAsj/view?usp=sharing).
+
 ### Colors
 
 Below you can find the colors chosen for this web application.
@@ -186,10 +212,6 @@ Minimal JavaScript was used for this project. All of the JavaScript code written
 
 Below you can find a snippet of the JavaScript code used.
 <img width="506" alt="javascript-used" src="https://user-images.githubusercontent.com/82375381/157510418-f6cfab6b-5956-4627-8625-719f7c3ae3f7.png">
-
-## Balsamiq Wireframes
-
-All wireframes created in the planning stages of this project can be found [here](https://drive.google.com/file/d/1-mW-y9yUtgK-bjodFbpzW5RcX3XePAsj/view?usp=sharing).
 
 ## Agile Process
 
