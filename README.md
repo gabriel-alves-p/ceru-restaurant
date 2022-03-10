@@ -107,23 +107,13 @@ Below you can find a snippet of the JavaScript code used.
 <img width="506" alt="javascript-used" src="https://user-images.githubusercontent.com/82375381/157510418-f6cfab6b-5956-4627-8625-719f7c3ae3f7.png">
 
 
-## Wireframes
+## Balsamiq Wireframes
 
 All wireframes created in the planning stages of this project can be found [here](https://drive.google.com/file/d/1-mW-y9yUtgK-bjodFbpzW5RcX3XePAsj/view?usp=sharing).
 
-
 ## Agile Process
 
-### User Stories
-
-You should be using Git Hub Issues to write your user stories.  To get to merit levels you need to show you have refined stories from Epics to Generic User stories.
-
-[Here's the lesson](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70) on how to create a User Story Templates. 
-
-If you want a chance at **DISTINCTION**, I'd suggest the following:
-- Create an Epic Story template, this would have a title, the story and children stories
-- Create a User Story template, this would initially have the title, the story, and a link to the Epic. Then you'd come back when you are prioritizing it to include the acceptance criteria, and story points, then again when you are working on it and fill in the tasks and adjust the story points if needed.
-- Name your stories in a way that it's easy to tie the children to the EPICS by name.
+### Epics
 
 <img width="800" alt="epic1-1" src="https://user-images.githubusercontent.com/82375381/157558739-bc676c71-cd9d-42f5-a2c2-0d940229f463.png">
 <img width="800" alt="epic1-2" src="https://user-images.githubusercontent.com/82375381/157558761-a1079453-e948-4a55-855e-d9344012335e.png">
@@ -141,30 +131,11 @@ If you want a chance at **DISTINCTION**, I'd suggest the following:
 <img width="800" alt="epic4-2" src="https://user-images.githubusercontent.com/82375381/157570232-c1a18ddf-0310-430b-82aa-77f597440c35.png">
 <img width="800" alt="epic4-3" src="https://user-images.githubusercontent.com/82375381/157570239-749e46be-15d7-4dc4-b1ce-f36d0fe6a527.png">
 
+### User Stories
 
-### EPIC Stories
+I followed Agile process and used GitHub issues to store my User Stories. They were created from the Epics above and were prioritized between "Must have", "Should have", and "Could have", according to the Agile Process taught in Code Institute lessons.
 
-I created epic stories for the main features and page components used on  my website.  To better manage things I prefixed my epic stories with EPIC To make my life easier I created a custom issues template for Epic Stories: ![epic user story template](documentation/images/epic_user_story.png)
-
-You can decide if you want to have any acceptance Criteria or not for Epic stories. 
-
-Tell the assessors where they can find your epic stories and call out the 
-
-- Link to Epic Milestone
-- link to Issues
-- link to Epic Story Template
-
-### Child Stories
-
-After creating the epic stories or main features for my website, I created user stories that could be story pointed and tasked to help keep me feel like I was making progress, plus it shows I tried to follow the Agile Process. To manage these better I included the EPIC story name in my Title.
-
-You can find my user stories by either looking at issues that are prefixed with USER STORY, or look at my milestone for  USER Stories.
-![user story template](documentation/images/user_story.png)
-
-- Link to Issues
-- Link to User Stories Milestone
-- Link to User Story Template
-
+You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/1) or by clicking on 'Issues' on this repository on GitHub.
 
 ## Product Backlog
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/085f3a8e344a4cf28b5b5355399abcc1/?child=last
