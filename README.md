@@ -97,23 +97,39 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 > - A section with a title containing a Contact Us form (first name, last name, email, mobile phone, and message inputs and a submit button).
 > - A footer with opening times, address, social media links. Shared across all pages.
 
+<img width="1424" alt="home-screenshot1" src="https://user-images.githubusercontent.com/82375381/157675982-64a87328-e060-4bb6-9acd-1e1b0cd107ee.png">
+<img width="1425" alt="home-screenshot2" src="https://user-images.githubusercontent.com/82375381/157675999-105b85cb-9303-41db-9c49-831bb5882c82.png">
+<img width="1426" alt="home-screenshot3" src="https://user-images.githubusercontent.com/82375381/157676014-4c4f9693-4121-48e5-88c5-6449fb9a21ca.png">
+<img width="1425" alt="home-screenshot4" src="https://user-images.githubusercontent.com/82375381/157676036-e9e7ad8b-a7be-451c-8050-b19f6c7a6d0a.png">
+
 #### Menus Page
 > - Photoshopped menu as HTML image elements.
+
+<img width="1424" alt="menus-screenshot" src="https://user-images.githubusercontent.com/82375381/157676792-68bd8e1e-5ebb-42d3-812b-88a2903f600b.png">
 
 #### Sign Up Page
 > - Hero image chosen for all pages account related.
 > - A section with a title, two paragraphs explaining the page, a link to take the user to the login page.
 > - A sign up form using crispy forms and allauth (email, username, password1 and password2 inputs, and a submit button).
 
+<img width="1425" alt="signup-screenshot" src="https://user-images.githubusercontent.com/82375381/157677751-f20ce567-db60-4399-adf2-3e8dec796764.png">
+
+
 #### Login Page
 > - Hero image chosen for all pages account related.
 > - A section with a title, two paragraphs explaining the page, a link to take the user to the sign up page.
 > - A login form using crispy forms and allauth (username and password inputs, and a submit button).
 
+<img width="1424" alt="login-screenshot" src="https://user-images.githubusercontent.com/82375381/157677789-c74815fa-1525-4fae-97c0-53875f7eb6e0.png">
+
+
 #### Logout Page
 > - Hero image chosen for all pages account related.
 > - A section with a title, text asking the user if they want to log out.
 > - A logout button using allauth.
+
+<img width="1423" alt="logout-screenshot" src="https://user-images.githubusercontent.com/82375381/157677897-783f9a10-c9db-4a16-b087-ae2fbb9ac937.png">
+
 
 #### Edit Account Page
 > - Hero image chosen for all pages account related.
@@ -121,20 +137,32 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 > - A form for the user to update their account details using crispy forms (pre filled: email and username, and a submit button)
 > - A link to take the user to the change password page.
 
+<img width="1427" alt="edit-profile-screenshot" src="https://user-images.githubusercontent.com/82375381/157677940-309de873-5504-4922-b41f-ba2e22842adb.png">
+
+
 #### Delete Account Page
 > - Hero image chosen for all pages account related.
 > - A section with a title, warning text asking the user if they want to delete their account, a link to return home.
 > - Delete account form using crispy forms ('Are you sure you want to delete your account?' and a submit button).
+
+<img width="1424" alt="delete-account-screenshot" src="https://user-images.githubusercontent.com/82375381/157677959-62145788-b360-49a7-b87a-7dae380a5e6b.png">
+
 
 #### Change Password Page
 > - Hero image chosen for all pages account related.
 > - A section with a title.
 > - Change password form using crispy forms (old password, new password1, and new password2 inputs, and a submit button).
 
+<img width="1424" alt="edit-password-screenshot" src="https://user-images.githubusercontent.com/82375381/157677971-8e430903-6123-4d94-ba85-bec313184e52.png">
+
+
 #### Make a Booking Page
 > - Hero image chosen for all pages booking related.
 > - A section with a title.
 > - A booking form using html (first name, last name, email, mobile phone, date, time, number of guests, and requirements inputs, a reset, and a submit button).
+
+<img width="1424" alt="make-booking-screenshot" src="https://user-images.githubusercontent.com/82375381/157678002-16d0c7b1-6ffd-4c31-9172-7a0b311ae4b3.png">
+
 
 #### View Bookings Page
 > - Hero image chosen for all pages booking related.
@@ -143,6 +171,10 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 > - If no bookings found, button leading to booking form appears.
 > - If paginated, pagination appears at the bottom.
 > - Confirmation appears before cancelling.
+
+<img width="1426" alt="bookings-screenshot1" src="https://user-images.githubusercontent.com/82375381/157678036-69765a4c-803b-4a02-be4a-68e33f2b1c21.png">
+<img width="1425" alt="bookings-screenshot2" src="https://user-images.githubusercontent.com/82375381/157678057-e92b5c17-1f6b-4a3c-98aa-4886607f6b97.png">
+
 
 #### Edit a Booking Page
 > - Hero image chosen for all pages booking related.
@@ -166,7 +198,7 @@ Decisions regarding how the information would be displayed were made by splittin
 
 I then ensured all pages that shared the same category looked very similar to each other but slightly different to the other categories, whilst ensuring it still looked part of the same website. This process was followed to make styling easier and promote intuitiveness for the user while navigating the pages.
 
-I then created:
+I then created wireframes based on this process followed.
 
 #### Balsamiq Wireframes
 
@@ -189,28 +221,62 @@ I chose these colors and inspiration based on the decade the Diner was built, th
 
 ### Typography
 
-- discuss font size, font types for headers vs buttons vs general text and how it ties into users' emotions or target audience.
-- include screenshots of fonts used and links to the appropriate website ex) https://fonts.google.com/specimen/Raleway
+Much like the colors discussed above, my choice of fonts ties well to the nostalgic and retro feel I wanted to convey through the styling of the pages.
+Keeping this in mind, I chose to go with the Google Font 'Monoton' for all heading elements. The font can be found [here](https://fonts.google.com/specimen/Monoton).
+
+<img width="232" alt="Screenshot 2022-03-10 at 10 28 16" src="https://user-images.githubusercontent.com/82375381/157671846-abeb3afd-1e6b-48ef-b963-ce295c37398b.png">
+
+<img width="453" alt="Screenshot 2022-03-10 at 10 28 23" src="https://user-images.githubusercontent.com/82375381/157671855-bf14d777-0d74-428d-b4c7-e2e713dfbf24.png">
+
+After looking for fonts that complement 'Monoton' I decided to go with 'Poppins' with a weight of 400 for the text in the web app, purely because it is easy to read and easy on the eyes. I felt compelled to contrast the strong use of the 'Monoton' font with a simple and basic font. You can view the font [here](https://fonts.google.com/specimen/Poppins).
+
+<img width="675" alt="font-screenshot" src="https://user-images.githubusercontent.com/82375381/157675093-c4b9fdb1-4f94-40de-8efb-abb3e1cc9610.png">
+
+<img width="669" alt="font-screenshot2" src="https://user-images.githubusercontent.com/82375381/157675105-30fc19f7-691c-41a0-8a3b-4ebdac0cb543.png">
 
 ### Images
 
-Explain why you used certain icons and images on your site
+I used a photoshopped vintage pin-up girl image as a decorator to contribute to the website's feel. Also... it's just an awesome image.
 
+<img width="471" alt="img-1" src="https://user-images.githubusercontent.com/82375381/157681406-edcc6fa5-c53f-42c0-b744-42535a8b1524.png">
+
+I used a carousel of images to rotate showcasing our most popular menu items. A picture speaks a thousand words.
+
+<img width="713" alt="img-2" src="https://user-images.githubusercontent.com/82375381/157681640-7bfc93ba-b47e-4108-9871-81929d785b15.png">
+
+<img width="712" alt="img-3" src="https://user-images.githubusercontent.com/82375381/157681682-e02a7509-9f5a-4219-86b8-5a540e6ce4da.png">
+
+<img width="711" alt="img-4" src="https://user-images.githubusercontent.com/82375381/157681684-bb8c6451-e958-44a1-81ca-373063106990.png">
+
+I used images as background images according to the categories discussed above, so all pages sharing the same category had the same hero-background.
+
+<img width="620" alt="bg-3" src="https://user-images.githubusercontent.com/82375381/157681182-0c714e66-b1cb-4855-b633-836b60f785f1.png">
+
+<img width="756" alt="bg-2" src="https://user-images.githubusercontent.com/82375381/157681219-680a37f8-ba5c-4655-8033-3a8b44d889cd.png">
+
+<img width="500" alt="bg-1" src="https://user-images.githubusercontent.com/82375381/157681239-3f9f051b-a881-4e92-877f-3079688c6ca7.png">
 
 ### Animations and Transitions
 
-- discuss any special animations or transitions you've programmed 
-- special hover state effects
+Hover effects were kept to a minimal due to simplicity being kept in mind.
+- Hover effect on navigation bar links scales up by 1.1 times.
 
+<img width="593" alt="hover-effect1" src="https://user-images.githubusercontent.com/82375381/157679892-3e593537-a6de-4df6-b6d1-c7643a7691db.png">
+
+- Hover effect on all buttons across all pages. Colors reverse, 1 second transition.
+
+<img width="171" alt="hover-effect2" src="https://user-images.githubusercontent.com/82375381/157679950-0dbda81f-f405-4122-9c7b-70a15a24dfe5.png">
 
 ### Custom Styles
-- call out any overrides you did for bootstrap styles or the framework you used,  even if they are fonts and colors, perhaps lead assessors to the file of interest in your repo 
+
+Most of the web app's styles were created using the Bootstrap framework (CSS and JavaScript). However, some custom CSS stylings were necessary. All of the styling written by me can be found [here](https://github.com/gabriel-alves-p/ceru-restaurant/blob/main/static/css/style.css).
 
 ### Custom Javascript
 
 Minimal JavaScript was used for this project. All of the JavaScript code written can be found at "static/js/script.js" and it was implemented on the template files "booking-form.html", and "edit-booking-form.html" to ensure the browser does not allow the user to select a date in the past, only from today onwards.
 
 Below you can find a snippet of the JavaScript code used.
+
 <img width="506" alt="javascript-used" src="https://user-images.githubusercontent.com/82375381/157510418-f6cfab6b-5956-4627-8625-719f7c3ae3f7.png">
 
 ## Agile Process
