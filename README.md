@@ -64,8 +64,87 @@ You can view this web application [here](https://ceru-restaurant.herokuapp.com/)
 - Gitpod / VSCode
 - Heroku
 - Cloudinary
+- Adobe Photoshop
 
 ## UX
+
+### Project Goals / Strategy Plane
+
+- The website's target audience are adults both with or without families who are interested in an out of the ordinary experience, or that possibly grew up watching American diners on TV, or that possibly have been to one.
+- The website is designed to be easy to read and intuitive, with information about the diner, menu links, contact form (including social media links) and the address all found in the home page.
+- The website's perhaps most important goal is to increase revenue and credibility via the implementation of a booking system.
+- Dedicated pages for account related tasks (sign up, sign in, sign out, edit details, delete account, etc).
+- Dedicated pages for booking related tasks (make a booking, view your bookings, edit booking, delete booking, etc).
+- The website is also designed to be nostalgic to users and really highlight the decade in the overall feel of the website.
+- The website is fully responsive from the largest desktop viewports (4k) to the smallest phone viewports (320px).
+
+### Scope Plane
+
+Features that, based on the strategy plane above, made it onto the web app include:
+
+#### Home Page
+> - Same navigation bar shared across all pages, checks whether user is authenticated or not and displays links accordingly. Has logo on top left corner.
+> - Toggle menu icon appears and links hide when under 768px screen width.
+> - Hero image on home page.
+> - Title and brief welcome message.
+> - Booking button highlighted as soon as user lands on page.
+> - An about us section with a title and two paragraphs explaining the diner's history.
+> - An image to decorate the text.
+> - A menus section with a title.
+> - Three menu buttons, each leading to a different part of the menu page.
+> - A carousel of images that showcase the food and drinks served at the diner.
+> - A section with a title containing a Google Maps iframe, so that users can get directions easily.
+> - A section with a title containing a Contact Us form (first name, last name, email, mobile phone, and message inputs and a submit button).
+> - A footer with opening times, address, social media links. Shared across all pages.
+
+#### Sign Up Page
+> - Hero image chosen for all pages account related.
+> - A section with a title, two paragraphs explaining the page, a link to take the user to the login page.
+> - A sign up form using crispy forms and allauth (email, username, password1 and password2 inputs, and a submit button).
+
+#### Login Page
+> - Hero image chosen for all pages account related.
+> - A section with a title, two paragraphs explaining the page, a link to take the user to the sign up page.
+> - A login form using crispy forms and allauth (username and password inputs, and a submit button).
+
+#### Logout Page
+> - Hero image chosen for all pages account related.
+> - A section with a title, text asking the user if they want to log out.
+> - A logout button using allauth.
+
+#### Edit Account Page
+> - Hero image chosen for all pages account related.
+> - A section with a title, text explaining the page, and a link to the account deletion page.
+> - A form for the user to update their account details using crispy forms (pre filled: email and username, and a submit button)
+> - A link to take the user to the change password page.
+
+#### Delete Account Page
+> - Hero image chosen for all pages account related.
+> - A section with a title, warning text asking the user if they want to delete their account, a link to return home.
+> - Delete account form using crispy forms ('Are you sure you want to delete your account?' and a submit button).
+
+#### Change Password Page
+> - Hero image chosen for all pages account related.
+> - A section with a title.
+> - Change password form using crispy forms (old password, new password1, and new password2 inputs, and a submit button).
+
+#### Make a Booking Page
+> - Hero image chosen for all pages booking related.
+> - A section with a title.
+> - A booking form using html (first name, last name, email, mobile phone, date, time, number of guests, and requirements inputs, a reset, and a submit button).
+
+#### View Bookings Page
+> - Hero image chosen for all pages booking related.
+> - A section with a title.
+> - Cards representing bookings (title, last name, first name, date, time, edit button, cancel button).
+> - If no bookings found, button leading to booking form appears.
+> - If paginated, pagination appears at the bottom.
+> - Confirmation appears before cancelling.
+
+#### Edit a Booking Page
+> - Hero image chosen for all pages booking related.
+> - A section with a title.
+> - A pre-filled booking form using crispy forms (first name, last name, email, mobile phone, date, time, number of guests, and requirements inputs, and a submit button).
 
 ### Colors
 
@@ -77,9 +156,10 @@ Below you can find the colors chosen for this web application.
 <img width="1150" alt="color-palette" src="https://user-images.githubusercontent.com/82375381/157326869-4be966f8-7250-4436-9a49-a7f4e35db8ba.png">
 
 Below you can find the inspiration for the colors chosen for this web application.
+
 <img width="338" alt="color-palette-inspiration" src="https://user-images.githubusercontent.com/82375381/157326981-784b9502-2381-435a-b9b8-2a33d2bae8dc.png">
 
-I chose these colors and inspiration based on the decade the Diner was built, the 1970s. The inspiration was taken from a popular home wallpaper pattern and color chosen by families in the United States. These colors are nostalgic and retro, which impacts the target audience, whom would ideally be interested, or have grown up in The Golden Era of the United States.
+I chose these colors and inspiration based on the decade the Diner was built, the 1970s. The inspiration was taken from a popular home wallpaper pattern and colors chosen by families in the United States at the time. These colors are nostalgic and retro, which impacts the target audience, whom would ideally be interested, or have grown up in The Golden Era of the United States.
 
 ### Typography
 
@@ -90,32 +170,6 @@ I chose these colors and inspiration based on the decade the Diner was built, th
 
 Explain why you used certain icons and images on your site
 
-### Design Elements
-
-- list out the type of elements you want to use on your site, this will help you  when choosing a framework and goes hand in hand when doing the wireframes. If you did something out of the ordinary, or think something was particularly clever, add a sentence and a screenshot or reference the file the code or css is in.
-
-> - desktop navigation
-> - mobile navigation
-> - footer
-> - containers/cards
-> - buttons
-> - text input
-> - textarea inputs
-> - dropdowns
-> - modals/layers
-> - check boxes
-> - switches
-> - accordions/drawers
-> - pagination
-> - date pickers
-> - maps
-> - images
-> - tooltips
-> - icons
-> - tabbed content
-> - file pickers
-> - video players
-> - audio players
 
 ### Animations and Transitions
 
