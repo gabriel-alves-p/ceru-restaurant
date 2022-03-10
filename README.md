@@ -270,123 +270,94 @@ https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/tes
 
 I kept track of my bugs in real time. You can view them and their details [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/2) or by clicking on the 'Projects' and then 'Bug Report' on this repository on GitHub.
 
-
-### Outstanding Defects
-It's ok to not resolve all the defects you found. If you know of something that isn't quite right, list it out and explain why you chose not to resolve it.
-
 ## Lighthouse Audits
 
-You should run your deployed website pages through lighthouse's audit to check performance, accessibility, best practices and SEO scores. You should aim to get 85 or higher score. 
-https://web.dev/measure/  If you have lower scores, read the report and follow the links to address the flagged issues. You can run this tool from Chrome Dev Tools too against your local machine, but the performance will the worst (I personally ignore my performance results unless it's deployed code. I hope for > 60 on that mark, but > 85 on the other 3)
+<img width="564" alt="lighthouse-audits" src="https://user-images.githubusercontent.com/82375381/157577857-8ca96d40-33ea-4b1c-8051-22d6bcdbfd48.png">
 
+## Deployment
 
+### Requirements
 
-# Deployment
+- [A GitHub account](https://github.com/join).
+- [A Heroku account](https://signup.heroku.com/).
+- [A Cloudinary account](https://cloudinary.com/users/register/free).
 
-## Requirements
-If the user is required to have certain keys and credentials you should include this section with diretions on how to get the necessary information.
-ex)
-1. **Google Account:** In order to have verification and forgot password emails sent to registered users you need a google account. If you don't have one  [Create a google account](https://accounts.google.com/Signup)
-2. **Google APIs**
-    1. in a new incognito tab, log into your new google account.
-    1. then update the url to be: https://console.cloud.google.com/getting-started?pli=1 
-        
-        **GOOGLE DRIVE API Access**
-        1.  create a new project for this, call it XXXXXX (You might want to refer to what you see in this video: https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LS101+2021_T1/courseware/293ee9d8ff3542d3b877137ed81b9a5b/071036790a5642f9a6f004f9888b6a45/ at the bottom of the screen to write out steps.)
-        2. Then click on Add APIs and Services and select Libraries
-        3. Search for Google Drive
-        4. Click Enable
-        5. Click Create Credentials
-        6. Select Google Drive API from the drop down, Application Data, then no and click the Next Button
-        7.  (https://developers.google.com/drive/api/v3/enable-drive-api) 
-        8. for service account details fill in a service account name ex) xxx_API, then click Create and Continue
-        9. For the Accoun acces, select Role: Basic/Editor then continue
-        10. Then Click Done
-        11. Now select the newly created service account
-        12. Click on the KEYS Tab
-        13. Click Add Key
-        14. Select JSON type (right click to show in folder so you know where the file was saved.
-        
-        **GOOGLE SHEETS API Access**
-        You may need to us the back button get to the APIS & SErvices section from where you were.
-        1. click the Libray  Tab and serarch for Google Sheets
-        2. click enable
+### GitHub
 
-3. The downloaded credentialsJSON file is basically your creds.json file that you need to put into your heroku settings or gitpod environment to access your google drive.
+- If you wish to contribute to this project, please **fork it** in your own GitHub account by clicking on the "Fork" button on the top right corner of this repository.
+<img width="111" alt="fork" src="https://user-images.githubusercontent.com/82375381/157577894-82529101-1cde-4d0a-acda-d61b0eb76fb3.png">
 
-4. Google Sheet Template
-  - If you had to create specific sheets for your project, instruct users to make their own copy of it from yours and rename it back to what the python project expects
-  - And don't forget to share the spreadsheet in question with the client_email from the creds.json 
-## Gitpod
-This section should describe the process someone would have to go through to get the local working in gitpod.  Such as install requirements.txt  and setting up a creds.json file that is in the gitignore and keeping their workspace and what goes in the env.py file without REAL KEYS.
+### In your IDE
 
-If you have project settings required such as a creds.json file from the GOOGLE DRIVE API acess, please provide an example of that file in the writeup with the project key values:
-```$python
-{
-    "type": "service_account",
-    "project_id": "<YOUR_VALUE>",
-    "private_key_id": "<YOUR_VALUE>",
-    "private_key": "<YOUR_VALUE>",
-    "client_email": "<YOUR_VALUE>",
-    "client_id": "<YOUR_VALUE>",
-    "auth_uri": "https://accoutns.google.com/0/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cer_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "clien_x509_cert_url": "<YOUR_VALUE>"
-}
+- After forking the repository, open it on your IDE of choice, and install all the dependencies necessary by running the following command in your command line interface.
 ```
-
-If you have any dependencies, you should instruct users to install them
-```$python
 pip3 install -r requirements.txt
 ```
 
+- Create a file in the top directory called 'env.py', and if it isn't in your '.gitignore' file, make sure to include its name there.
+<img width="136" alt="Screenshot 2022-03-10 at 00 28 27" src="https://user-images.githubusercontent.com/82375381/157582817-f5f6963c-37dd-47be-bfbc-898b8363c666.png">
 
-## Heroku
-This section should describe the process you went through to deploy the project to Heroku. Include screenshots if you think they would make the process easier.
+### Heroku
 
-You may want to re-watch the lessons when writing up this section.
+- Log into Heroku account, click on 'Create new app'. 
+<img width="249" alt="step10 png" src="https://user-images.githubusercontent.com/82375381/157579540-98888c1a-0dd9-45ec-b97a-9caa5c90d95a.png">
 
-If you have project settings required for Heroku, provide a table of the keys and values.
-Do not share your personal keys but either cut them out of the screen shot or say <YOUR_VALUE> and include links on how the user would obtain such values.
+- Choose an available name, select your region, and click on 'Create app'.
+<img width="695" alt="step11 png" src="https://user-images.githubusercontent.com/82375381/157579987-fdaffe3f-5a69-4176-9241-497a7a6ee659.png">
 
-## Fork the repository
-Instruct users to make a fork so they have a copy of the repository in THEIR own git hub account: https://github.com/maliahavlicek/portfolio_project_03
+- Click on 'Resources'.
+<img width="584" alt="step" src="https://user-images.githubusercontent.com/82375381/157580367-5073c040-1707-4e23-9991-e7b204d950ee.png">
 
-![image](https://user-images.githubusercontent.com/23039742/132136504-eb79a6f3-0205-4c82-80c2-eef136ec7e4c.png)
+- Search for 'Heroku Postgres' and select it.
+<img width="681" alt="Screenshot 2022-03-10 at 00 03 57" src="https://user-images.githubusercontent.com/82375381/157580448-900dad15-5957-4f6d-9250-1c0bdfcad2df.png">
 
+- Select the free 'Hobby Dev' postgres option and click on 'Submit Order Form'.
+<img width="528" alt="step13 png" src="https://user-images.githubusercontent.com/82375381/157580581-3abd0fc4-991c-4bfc-9587-5da399905f6f.png">
 
-#### New Project
-Log into Heroku and create a new project. Name it something like XXX_coders_bistro.
+- Click on 'Settings'.
+<img width="598" alt="step14 png" src="https://user-images.githubusercontent.com/82375381/157580749-5094839e-17df-4866-943c-d700d6c70999.png">
 
-
-#### Settings
-On the settings tab you have to address two things:
-1. **Config Vars**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135869-215d2e0f-805d-40a8-a8c2-fb1098e2645d.png)
-
-  At a bar minimum you should show the user that they need to add the PORT. 8000 key value pair.
-
-
-2. **Build Packs**
-
-  ![image](https://user-images.githubusercontent.com/23039742/132135918-28cac112-7766-4277-905c-4a4963d8442d.png)
-
-  add Python Then Node.js
+- Click on 'Add buildpack' and choose 'heroku/python'.
+<img width="845" alt="Screenshot 2022-03-10 at 00 39 09" src="https://user-images.githubusercontent.com/82375381/157583904-cbdd0892-d8de-4bdf-8564-34675d46c522.png">
 
 
-#### Deploy
-1. Set up to github and select the correct repository:
+- Click on 'Reveal Config Vars' and you should see this.
+<img width="799" alt="step15 png" src="https://user-images.githubusercontent.com/82375381/157581018-ad3ab525-0089-43eb-ab30-71d63836e1de.png">
 
-  ![image](https://user-images.githubusercontent.com/23039742/132136113-c257c921-d10c-4ccc-af09-6a1d25136395.png)
+- Below that, add the KEY 'SECRET_KEY' and choose whatever VALUE you wish to be your secret key (I've covered mine, keep yours secret).
+<img width="804" alt="step17 png" src="https://user-images.githubusercontent.com/82375381/157581364-771cefa1-6418-4daa-bd0a-9b298e24dbcd.png">
 
-2. Deploy either manual or automatic
+- Log into your Cloudinary account and click on 'Dashboard' on the top left corner.
+<img width="337" alt="Screenshot 2022-03-10 at 00 15 09" src="https://user-images.githubusercontent.com/82375381/157581548-e579d72f-d8d6-406b-bfc9-9f1ab1a7aa20.png">
 
-![image](https://user-images.githubusercontent.com/23039742/132136241-9d76fabb-39f0-4696-bc5f-047398fdaf41.png) 
+- Copy your 'API Environment variable'.
+<img width="562" alt="Screenshot 2022-03-10 at 00 15 42" src="https://user-images.githubusercontent.com/82375381/157581735-b59ef865-946f-48ca-a32d-3e7edeabf68f.png">
 
+- Back on Heroku, add a KEY 'CLOUDINARY_URL' and paste in your Cloudinary 'API Environment variable' as the VALUE (it must begin with 'cloudinary://' you can delete anything before that).
+<img width="797" alt="step24 png" src="https://user-images.githubusercontent.com/82375381/157582095-59891b58-3c5e-4d2a-847d-026556bb1098.png">
 
-# Credits
+- Create one last KEY 'DEBUG' and set its VALUE to 'False'.
+<img width="717" alt="Screenshot 2022-03-10 at 00 21 53" src="https://user-images.githubusercontent.com/82375381/157582190-0c573f33-a476-43ea-a003-4f9e4254b55d.png">
+
+- Back in your 'env.py' file, write the following code, matching your values here with your Heroku VALUES but in quotes on here! (important to be in quotes)
+<img width="810" alt="step16 png" src="https://user-images.githubusercontent.com/82375381/157583277-b24ad188-f7eb-4bf4-a201-4080784ee649.png">
+
+- Back to Heroku, click on 'Deploy'.
+<img width="592" alt="step34 png" src="https://user-images.githubusercontent.com/82375381/157583398-436efec5-ac81-4d25-8ce0-0d784c95ab46.png">
+
+- Click on GitHub and connect with your GitHub account details 
+<img width="537" alt="step35 png" src="https://user-images.githubusercontent.com/82375381/157583534-81c6ea13-65ee-4939-be30-fffbad772500.png">
+
+- Search for this **forked** repository 'ceru-restaurant' and select it.
+<img width="1229" alt="Screenshot 2022-03-10 at 00 37 22" src="https://user-images.githubusercontent.com/82375381/157583648-a33289ba-b202-46b0-8665-7878e42bcb01.png">
+
+- Once it shows as connected, scroll down to 'Manual Deploy', select 'main' and click on Deploy Branch.
+<img width="600" alt="step36 png" src="https://user-images.githubusercontent.com/82375381/157583740-7233de24-e76a-4090-b5d1-1fbcec2248c6.png">
+
+- You can optionally Enable Automatic Deploys, which means your app will be deployed automatically every time you push your changes to GitHub through your command line interface (recommended).
+<img width="1246" alt="Screenshot 2022-03-10 at 00 42 06" src="https://user-images.githubusercontent.com/82375381/157584128-3061ba4b-a797-4472-9b3e-972a97428f39.png">
+
+## Credits
 
 To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did. 
 
