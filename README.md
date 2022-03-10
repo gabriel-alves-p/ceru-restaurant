@@ -308,9 +308,9 @@ You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-rest
 
 All of my templates (User Stories and Bug Report) can be viewed [here](https://github.com/gabriel-alves-p/ceru-restaurant/issues/new/choose) or by clicking on 'Issues' and then 'New Issue' on this repository on GitHub.
 
-### Development
+### Development / Iterations
 
-#### Week 1 - Project inception & planning.
+#### Week 1 Milestone - Project inception & planning.
 - Decide to follow Code Institute's project idea 1 to create a restaurant's booking system.
 
 <img width="576" alt="code-institute-idea" src="https://user-images.githubusercontent.com/82375381/157700816-b26f06c2-c67d-4bd2-ae91-a6adb6f8660a.png">
@@ -332,7 +332,7 @@ All of my templates (User Stories and Bug Report) can be viewed [here](https://g
 
 <img width="1073" alt="workflow" src="https://user-images.githubusercontent.com/82375381/157702146-9711110f-3221-4303-adb4-075d7a19fe6a.png">
 
-#### Week 2 - Create repository & deploy.
+#### Week 2 Milestone - Create repository & deploy.
 - Create GitHub repository using Code Institute's gitpod template.
 
 <img width="395" alt="Screenshot 2022-03-10 at 16 07 43" src="https://user-images.githubusercontent.com/82375381/157736752-488b3b7e-0f08-466e-a228-4a25f5e6efeb.png">
@@ -398,30 +398,60 @@ FURTHER STEPS OF DEPLOYMENT FOLLOWED BEYOND THIS STAGE CAN BE FOUND BELOW IN THE
 
 <img width="369" alt="step33 png" src="https://user-images.githubusercontent.com/82375381/157740431-6d23979a-008a-4b37-8a4a-032eba15a1fb.png">
 
-#### Week 3
+#### Week 3 Milestone - Set up basics & find images online for content
+- Turn Data models above into code in models.py
 
-#### Week 4
+<img width="1200" alt="Screenshot 2022-03-10 at 17 18 20" src="https://user-images.githubusercontent.com/82375381/157747610-523df3be-2e5e-4cee-9eb6-0fe475a134d8.png">
 
-#### Week 5
+- Migrate changes.
+<img width="490" alt="step7 png" src="https://user-images.githubusercontent.com/82375381/157749463-62c0ec71-970a-41ae-b7fa-0899fd566e98.png">
 
-#### Week 6
+- Search online and come up with content to begin writing templates.
 
-#### Week 7
+#### Week 4 Milestone - Write basic templates, views and urls
+- Create templates directory.
+
+- Install Django Allauth for authentication.
+
+<img width="305" alt="Screenshot 2022-03-10 at 18 09 26" src="https://user-images.githubusercontent.com/82375381/157755080-30c1357f-0a03-4a2c-8aab-72a67ada338a.png">
+
+- Add allauth urls to urls.py in ceru_restaurant directory.
+
+<img width="488" alt="Screenshot 2022-03-10 at 18 08 44" src="https://user-images.githubusercontent.com/82375381/157754989-1d2f9d82-fe20-4953-902c-03a1a2291b4c.png">
+
+- Create template files for all pages (base.html, index.html, booking_form.html, dashboard.html, edit_booking.html, edit_password.html, edit_profile.html, delete_account.html, menus.html)
+
+<img width="383" alt="Screenshot 2022-03-10 at 18 05 44" src="https://user-images.githubusercontent.com/82375381/157754586-9a2eab24-521f-4b6f-84bd-8ec71302464e.png">
+
+- Create basic views (one for each page) in views.py.
+
+<img width="573" alt="Screenshot 2022-03-10 at 18 14 55" src="https://user-images.githubusercontent.com/82375381/157755989-bf37e7d6-e12f-4bc5-83f6-92a59d62313d.png">
+
+- Create urls (one for each page) in urls.py in ceru directory.
+
+<img width="912" alt="Screenshot 2022-03-10 at 18 14 06" src="https://user-images.githubusercontent.com/82375381/157755888-045c99db-d5dd-4d4c-86f6-c339a8b146cf.png">
+
+#### Week 5 Milestone - Write functionality & style
+- Write HTML, CSS, JavaScript and use Bootstrap for responsiveness on all templates.
+- Once styles and responsiveness are in place, begin writing functionality in forms.py and views.py.
+- Follow same iteration format from 
+
+#### Week 6 Milestone - Polish off and README.md
 
 
 
 ## Information Architecture
 As part of the requirements for this project you need to have at least 1 original data model.  It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built.
 
-## Entity Relationship Diagram
+### Entity Relationship Diagram
 Wade Williams wrote a great blog about how to add a django extension to auto create an ERD. https://wadewilliams.com/technology-software/generating-erd-for-django-applications/ You can always draw one out by hand or google sheets. You can also draw this up by hand if you want or use a spreadsheet to show your data model. 
 
-## Database Choice
+### Database Choice
 
 PostgreSQL was my database of choice for the deployed application, for the data is relational and Heroku (used for deployment) serves this up realitvely easily, and with no cost.
 
-## Data Models
-Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them.  
+### Data Models
+Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them. 
 
 Each data model that you created yourself should have its Fields, Field Type and any validation documented.  You should also cross-reference any code in your repository that relate to CREATE, READ, UPDATE, DELETE operations for these models. 
 
@@ -458,7 +488,7 @@ I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive 
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
 
-## Implemented Features
+### Implemented Features
 
 For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
 
@@ -466,7 +496,7 @@ It's easiest to break this section down into the header, footer, and each page/l
 
 Don't forget your 404 error page.
 
-## Future Features
+### Future Features
 
 Use this section to discuss plans for additional features to be implemented in the future:
 
@@ -478,7 +508,7 @@ In this section, you need to convince the assessor that you have conducted enoug
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-## Validation Testing
+### Validation Testing
 You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/) Note, any error associated with root: color variables were ignored.
@@ -487,7 +517,7 @@ You should try to ensure you code is valid and follows proper indentation.  In t
 - [JSON validation](https://jsonlint.com/) for each .json file 
 - [PEP8 Validator](http://pep8online.com/) include a screenshot of results. (you should do this for all .py files in your repo, or note that there are no red errors in gitpod after the file is saved)
 
-## Cross Browser and Cross Device Testing
+### Cross Browser and Cross Device Testing
 Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints.
 
 | TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
@@ -502,7 +532,7 @@ Create a table that lists out what devices, browsers, and operating system you t
 | Firefox DevTools: iPad Pro Hz | Firefox     | iOs        | L 1366 x 1024 |
 | Real Computer: MacBook Pro XL | Safari      | Big Sur    | XL 1752 x 960 |
 
-## Manual Testing
+### Manual Testing
 
 For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. 
 
@@ -510,12 +540,7 @@ At this point you really should be using GITHUB's Issues to track these as it he
 
 Create Custom Issue Template and a milestone in git hub.[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit?usp=sharing) I put together on how to do this.
 
-## Automated Testing
-If you managed to write jasmine tests or some django tests, note those files out here and how to run them.  I only did this in my last project as I didn't have the time or energy to learn how to write tests. https://github.com/maliahavlicek/ms4_challenger/blob/master/documentation/TESTING.md is my write up about those and how I ran them, but a simple test I'd recommend is authentication and any views you limit to superusers or logged in users
-
-https://github.com/maliahavlicek/ms4_challenger/blob/master/challenges/tests/test_views.py 
-
-## Defects of Note
+## Defects
 
 I kept track of my bugs in real time. You can view them and their details [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/2) or by clicking on the 'Projects' and then 'Bug Report' on this repository on GitHub.
 
@@ -568,7 +593,6 @@ pip3 install -r requirements.txt
 
 - Click on 'Add buildpack' and choose 'heroku/python'.
 <img width="845" alt="Screenshot 2022-03-10 at 00 39 09" src="https://user-images.githubusercontent.com/82375381/157583904-cbdd0892-d8de-4bdf-8564-34675d46c522.png">
-
 
 - Click on 'Reveal Config Vars' and you should see this.
 <img width="799" alt="step15 png" src="https://user-images.githubusercontent.com/82375381/157581018-ad3ab525-0089-43eb-ab30-71d63836e1de.png">
