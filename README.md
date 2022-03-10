@@ -136,9 +136,11 @@ All wireframes created in the planning stages of this project can be found [here
 
 ### User Stories
 
-I followed Agile process and used GitHub issues to store my User Stories. They were created from the Epics above and were prioritized between "Must have", "Should have", and "Could have", according to the Agile Process taught in Code Institute lessons.
+I followed Agile process and used GitHub issues to store my User Stories. They were created from the Epics above and were prioritized and ordered from "Must have", and "Should have", to "Could have", according to the Agile Process taught in one of the Code Institute lessons.
 
 You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/1) or by clicking on 'Projects' and then 'User Stories' on this repository on GitHub.
+
+All of my templates (User Stories and Bug Report) can be viewed [here](https://github.com/gabriel-alves-p/ceru-restaurant/issues/new/choose) or by clicking on 'Issues' and then 'New Issue' on this repository on GitHub.
 
 ## Product Backlog
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/085f3a8e344a4cf28b5b5355399abcc1/?child=last
