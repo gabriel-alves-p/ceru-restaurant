@@ -112,9 +112,9 @@ Below you can find a snippet of the JavaScript code used.
 All wireframes created in the planning stages of this project can be found [here](https://drive.google.com/file/d/1-mW-y9yUtgK-bjodFbpzW5RcX3XePAsj/view?usp=sharing).
 
 
-# Agile Process
+## Agile Process
 
-## User Stories
+### User Stories
 
 You should be using Git Hub Issues to write your user stories.  To get to merit levels you need to show you have refined stories from Epics to Generic User stories.
 
@@ -125,18 +125,22 @@ If you want a chance at **DISTINCTION**, I'd suggest the following:
 - Create a User Story template, this would initially have the title, the story, and a link to the Epic. Then you'd come back when you are prioritizing it to include the acceptance criteria, and story points, then again when you are working on it and fill in the tasks and adjust the story points if needed.
 - Name your stories in a way that it's easy to tie the children to the EPICS by name.
 
-Example: 
-EPIC: Navigation
-As a user, I want to have easy to see navigation on the page, so I can intuitively interact with the site without getting frustrated.
+<img width="800" alt="epic1-1" src="https://user-images.githubusercontent.com/82375381/157558739-bc676c71-cd9d-42f5-a2c2-0d940229f463.png">
+<img width="800" alt="epic1-2" src="https://user-images.githubusercontent.com/82375381/157558761-a1079453-e948-4a55-855e-d9344012335e.png">
+<img width="800" alt="epic1-3" src="https://user-images.githubusercontent.com/82375381/157558771-5cb0f10f-52be-4b7b-b89b-27a014e8e446.png">
+<img width="800" alt="epic1-4" src="https://user-images.githubusercontent.com/82375381/157558779-3f504af1-ca26-4976-925b-41ac194f8c74.png">
+<img width="800" alt="epic1-5" src="https://user-images.githubusercontent.com/82375381/157558783-8ce33d51-e417-429d-9ab0-05842b84d446.png">
+<img width="800" alt="epic1-6" src="https://user-images.githubusercontent.com/82375381/157558792-8f89238a-2bac-4a3c-8b10-8b828b0a1e53.png">
+<img width="800" alt="epic2-1" src="https://user-images.githubusercontent.com/82375381/157562288-11f33559-5d77-4910-93ae-8073b64f2660.png">
+<img width="800" alt="epic2-2" src="https://user-images.githubusercontent.com/82375381/157562290-f98b0a3e-40d7-496c-9ad4-08a9efb3f204.png">
+<img width="800" alt="epic2-3" src="https://user-images.githubusercontent.com/82375381/157562303-2eeb3921-da58-474d-8218-b6e27d5cbca7.png">
+<img width="800" alt="epic3-1" src="https://user-images.githubusercontent.com/82375381/157566813-b241c306-9e4f-4594-98a1-a947638fc993.png">
+<img width="800" alt="epic3-2" src="https://user-images.githubusercontent.com/82375381/157566819-bebcb30b-b2fc-4bdd-b3db-8677b9dee030.png">
+<img width="800" alt="epic3-3" src="https://user-images.githubusercontent.com/82375381/157566828-d1e69bc5-3126-46d9-93d7-0c70694aceb2.png">
+<img width="800" alt="epic4-1" src="https://user-images.githubusercontent.com/82375381/157570221-69f6dcb2-1015-4e8e-9b81-748e5c4f27fb.png">
+<img width="800" alt="epic4-2" src="https://user-images.githubusercontent.com/82375381/157570232-c1a18ddf-0310-430b-82aa-77f597440c35.png">
+<img width="800" alt="epic4-3" src="https://user-images.githubusercontent.com/82375381/157570239-749e46be-15d7-4dc4-b1ce-f36d0fe6a527.png">
 
-USER STORY: Navigation: Create Template
-As a developer, I don't want to have copy and paste my navigation on every page. I want to use a template to house this information, so my code is easier to maintain.
-
-USER STORY: Navigation: Desktop
-As a user I want clear navigation that is up to industry standards for my desktop experience, so I can easily find what I need on a website.
-
-USER STORY: Navigation: Mobile
-As a user I want clear navigation that is up to industry standards for my mobile experience, so I can easily find what I need on a website without the navigation taking up the entire screen.
 
 ### EPIC Stories
 
