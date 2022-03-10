@@ -315,7 +315,7 @@ All of my templates (User Stories and Bug Report) can be viewed [here](https://g
 
 <img width="576" alt="code-institute-idea" src="https://user-images.githubusercontent.com/82375381/157700816-b26f06c2-c67d-4bd2-ae91-a6adb6f8660a.png">
 
-- Meet with mentor Malia Havlicek.
+- Meet with mentor Malia Havlicek to speak about my ideas and hear her suggestions.
 
 - Begin planning project (notes).
 <img width="524" alt="notes1" src="https://user-images.githubusercontent.com/82375381/157701219-4d812bfa-52c0-48a6-b6dd-da6b977467d0.png">
@@ -332,8 +332,71 @@ All of my templates (User Stories and Bug Report) can be viewed [here](https://g
 
 <img width="1073" alt="workflow" src="https://user-images.githubusercontent.com/82375381/157702146-9711110f-3221-4303-adb4-075d7a19fe6a.png">
 
+#### Week 2 - Create repository & deploy.
+- Create GitHub repository using Code Institute's gitpod template.
 
-#### Week 2
+<img width="395" alt="Screenshot 2022-03-10 at 16 07 43" src="https://user-images.githubusercontent.com/82375381/157736752-488b3b7e-0f08-466e-a228-4a25f5e6efeb.png">
+
+- Install frameworks & libraries.
+- Freeze dependencies.
+
+<img width="543" alt="step1 png" src="https://user-images.githubusercontent.com/82375381/157737821-293c37d3-ea55-479a-b7bd-b778b623bee7.png">
+
+<img width="574" alt="step2 png" src="https://user-images.githubusercontent.com/82375381/157737830-67d97844-90b7-44a5-bfb1-eddf3b2b5ebe.png">
+
+<img width="560" alt="step3 png" src="https://user-images.githubusercontent.com/82375381/157737902-bc253d2a-6f64-48d1-8f96-d170ba3879ab.png">
+
+<img width="582" alt="step4 png" src="https://user-images.githubusercontent.com/82375381/157737942-d0f276fb-7a09-443c-8a3e-db19493a3008.png">
+
+- Start Django app.
+
+<img width="613" alt="step5 png" src="https://user-images.githubusercontent.com/82375381/157738013-f48f3b61-1747-47f8-bf03-722e2151b486.png">
+
+<img width="529" alt="step6 png" src="https://user-images.githubusercontent.com/82375381/157738042-4018c1c4-58a8-4cf9-bd43-73307def0514.png">
+
+<img width="490" alt="step7 png" src="https://user-images.githubusercontent.com/82375381/157738080-8ffe84d7-bc45-47f3-bdf9-16b80995b792.png">
+
+- Configure settings.py
+
+- Import env.py if the file exists in the current directory.
+
+<img width="274" alt="step18 png" src="https://user-images.githubusercontent.com/82375381/157738713-afd8bec6-d5fc-4dd8-a9fe-2cbd6d301385.png">
+
+- Add intalled apps to the same section on settings.py
+
+<img width="302" alt="step26 png" src="https://user-images.githubusercontent.com/82375381/157738701-ebea6db4-caf1-4a3b-bc6e-32caca8286ec.png">
+
+- Set security key to get from env.py
+
+<img width="536" alt="step19 png" src="https://user-images.githubusercontent.com/82375381/157739387-8b555ecc-9881-4c6e-98fa-862704108102.png">
+
+- Set database to collect from env.py
+
+<img width="562" alt="step20 png" src="https://user-images.githubusercontent.com/82375381/157739738-55095aa6-c4cb-4d94-af9f-65265373ef7c.png">
+
+- Direct Django where to find template files.
+
+<img width="517" alt="step29 png" src="https://user-images.githubusercontent.com/82375381/157739973-22be773d-8c5c-427f-986a-62c256f67a38.png">
+
+- Set allowed hosts.
+
+<img width="509" alt="step30 png" src="https://user-images.githubusercontent.com/82375381/157740036-d4f61ec1-b5cf-4810-be20-11e3bfc110f5.png">
+
+- Configure env.py file.
+
+<img width="810" alt="step16 png" src="https://user-images.githubusercontent.com/82375381/157740100-a4950cbf-3a65-443e-8b5a-1f05bd7a7322.png">
+
+- Create and configure Procfile for heroku.
+
+<img width="332" alt="step31 png" src="https://user-images.githubusercontent.com/82375381/157740193-bfbd31fa-b1ec-4d61-9107-bc2be20b1061.png">
+
+FURTHER STEPS OF DEPLOYMENT FOLLOWED BEYOND THIS STAGE CAN BE FOUND BELOW IN THE **DEPLOYMENT** SECTION.
+
+- Save, commit & push changes to GitHub.
+
+<img width="527" alt="step32 png" src="https://user-images.githubusercontent.com/82375381/157740427-a232677c-a596-45ce-9c07-ef130bac6123.png">
+
+<img width="369" alt="step33 png" src="https://user-images.githubusercontent.com/82375381/157740431-6d23979a-008a-4b37-8a4a-032eba15a1fb.png">
 
 #### Week 3
 
@@ -391,7 +454,7 @@ I used [draw.io](https://app.diagrams.net/) and hooked it up to my google drive 
 ![image](https://user-images.githubusercontent.com/23039742/154406188-c9beb57a-2fd1-4f26-a8ed-bee320e46e3d.png)
 
 
-# Features
+## Features
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
 
@@ -409,7 +472,7 @@ Use this section to discuss plans for additional features to be implemented in t
 
 If you end up not developing some features you hoped to implement, you can include those in this section.
 
-# Testing
+## Testing
 
 In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
@@ -429,17 +492,15 @@ Create a table that lists out what devices, browsers, and operating system you t
 
 | TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
 |-------------------------------|-------------|------------|---------------|
-| real phone: motog6            | chrome      | android    | XS 360 x 640  |
-| browser stack: iPhone5s       | safari      | iOs        | XS 320 x 568  |
-| dev tools emulator: pixel 2   | firefox     | android    | SM 411 x 731  |
-| browserstack: iPhone 10x      | Chrome      | iOs        | SM 375 x 812  |
-| browserstack: nexus 7 - vert  | Chrome      | android    | M 600 x 960   |
-| real tablet: ipad mini - vert | safari      | iOs        | M 768 x 1024  |
-| browserstack: nexus 7 - horiz | firefox     | android    | LG 960 x 600  |
-| chrome emulator: ipad - horiz | safari      | iOs        | LG 1024 x 768 |
-| browserstack                  | Chrome      | windows    | XL 1920 x 946 |
-| real computer: mac book pro   | safari 12.1 | Mohave     | XL 1400 x 766 |
-| browserstack                  | IE Edge 88  | windows 10 | XL 1920 x 964 |
+| Real Phone: iPhone XS Max     | Safari      | iOs.       | S/M 414 x 896 |
+| Real Phone: iPhone 12.        | Chrome      | iOs        | S  390 x 844  |
+| Real Computer: MacBook Pro    | Firefox     | Big Sur    | L  1240 x 768 |
+| Chrome DevTools: Surface Duo  | Chrome      | Android    | M  540 x 720  |
+| Safari DevTools: iPad         | Safari      | iOs        | M 768 x 1024  |
+| Chrome DevTools: iPad mini    | Chrome      | iOs        | M 768 x 1024  |
+| Firefox DevTools: iPad Pro    | Firefox     | Android    | L 1024 x 1366 |
+| Firefox DevTools: iPad Pro Hz | Firefox     | iOs        | L 1366 x 1024 |
+| Real Computer: MacBook Pro XL | Safari      | Big Sur    | XL 1752 x 960 |
 
 ## Manual Testing
 
