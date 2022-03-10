@@ -259,6 +259,7 @@ I used images as background images according to the categories discussed above, 
 ### Animations and Transitions
 
 Hover effects were kept to a minimal due to simplicity being kept in mind.
+
 - Hover effect on navigation bar links scales up by 1.1 times.
 
 <img width="593" alt="hover-effect1" src="https://user-images.githubusercontent.com/82375381/157679892-3e593537-a6de-4df6-b6d1-c7643a7691db.png">
@@ -307,26 +308,47 @@ You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-rest
 
 All of my templates (User Stories and Bug Report) can be viewed [here](https://github.com/gabriel-alves-p/ceru-restaurant/issues/new/choose) or by clicking on 'Issues' and then 'New Issue' on this repository on GitHub.
 
-### Product Backlog
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/085f3a8e344a4cf28b5b5355399abcc1/?child=last
-This is the MILESTONE where you grab stories from the issues or USER stories you created and prioritize them  and order them.
+### Development
 
-Include a link to your Product Catalog Milestone
+#### Week 1 - Project inception & planning.
+- Decide to follow Code Institute's project idea 1 to create a restaurant's booking system.
 
-### Iterations
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/71fe6c52cccf477688e924c9889f5fec/?child=first
+<img width="576" alt="code-institute-idea" src="https://user-images.githubusercontent.com/82375381/157700816-b26f06c2-c67d-4bd2-ae91-a6adb6f8660a.png">
 
-Add links to iteration milestones
+- Meet with mentor Malia Havlicek.
+
+- Begin planning project (notes).
+<img width="524" alt="notes1" src="https://user-images.githubusercontent.com/82375381/157701219-4d812bfa-52c0-48a6-b6dd-da6b977467d0.png">
+
+<img width="512" alt="notes2" src="https://user-images.githubusercontent.com/82375381/157701238-01d25b1d-9516-47ac-ba6c-d103dc99d4e2.png">
+
+- Planning of models for the app.
+
+<img width="523" alt="data-models" src="https://user-images.githubusercontent.com/82375381/157699276-dff9db71-2040-4965-9bbd-73a64430bc38.png">
+
+<img width="525" alt="data-models2" src="https://user-images.githubusercontent.com/82375381/157699285-b38adae4-cade-4edf-ae0b-0570c5bb9fee.png">
+
+- Loosely plan workflow chart.
+
+<img width="1073" alt="workflow" src="https://user-images.githubusercontent.com/82375381/157702146-9711110f-3221-4303-adb4-075d7a19fe6a.png">
+
+
+#### Week 2
+
+#### Week 3
+
+#### Week 4
+
+#### Week 5
+
+#### Week 6
+
+#### Week 7
 
 
 
-### Progress Boards
-https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/7ad7f487cc6148ecb182d77feaeda269/?child=first
-Add links to Progress boards
-
-
-# Information Architecture
-As part of the requirements for this project you need to have at least 1 original data model.  It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built. 
+## Information Architecture
+As part of the requirements for this project you need to have at least 1 original data model.  It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built.
 
 ## Entity Relationship Diagram
 Wade Williams wrote a great blog about how to add a django extension to auto create an ERD. https://wadewilliams.com/technology-software/generating-erd-for-django-applications/ You can always draw one out by hand or google sheets. You can also draw this up by hand if you want or use a spreadsheet to show your data model. 
