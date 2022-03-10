@@ -39,7 +39,31 @@ You can view this web application [here](https://ceru-restaurant.herokuapp.com/)
 
 ## Technologies
 
-- list out techs
+### Languages
+- HTML
+- CSS
+- Python
+- JavaScript
+- Markdown
+
+### Libraries & Frameworks
+- Django
+- Bootstrap
+
+### Django Extensions
+- Allauth
+- Crispy forms
+- Summernote
+
+### Database
+- PostgreSQL
+- SQLite
+
+### Deployment, Repository & Media
+- GitHub
+- Gitpod / VSCode
+- Heroku
+- Cloudinary
 
 ## UX
 
@@ -109,7 +133,6 @@ Minimal JavaScript was used for this project. All of the JavaScript code written
 Below you can find a snippet of the JavaScript code used.
 <img width="506" alt="javascript-used" src="https://user-images.githubusercontent.com/82375381/157510418-f6cfab6b-5956-4627-8625-719f7c3ae3f7.png">
 
-
 ## Balsamiq Wireframes
 
 All wireframes created in the planning stages of this project can be found [here](https://drive.google.com/file/d/1-mW-y9yUtgK-bjodFbpzW5RcX3XePAsj/view?usp=sharing).
@@ -142,20 +165,20 @@ You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-rest
 
 All of my templates (User Stories and Bug Report) can be viewed [here](https://github.com/gabriel-alves-p/ceru-restaurant/issues/new/choose) or by clicking on 'Issues' and then 'New Issue' on this repository on GitHub.
 
-## Product Backlog
+### Product Backlog
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/085f3a8e344a4cf28b5b5355399abcc1/?child=last
 This is the MILESTONE where you grab stories from the issues or USER stories you created and prioritize them  and order them.
 
 Include a link to your Product Catalog Milestone
 
-## Iterations
+### Iterations
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/71fe6c52cccf477688e924c9889f5fec/?child=first
 
 Add links to iteration milestones
 
 
 
-## Progress Boards
+### Progress Boards
 https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+AG101+2021_T1/courseware/a4e548ca70a3473aa890ba2ab9bf612c/7ad7f487cc6148ecb182d77feaeda269/?child=first
 Add links to Progress boards
 
@@ -167,7 +190,8 @@ As part of the requirements for this project you need to have at least 1 origina
 Wade Williams wrote a great blog about how to add a django extension to auto create an ERD. https://wadewilliams.com/technology-software/generating-erd-for-django-applications/ You can always draw one out by hand or google sheets. You can also draw this up by hand if you want or use a spreadsheet to show your data model. 
 
 ## Database Choice
-Just state you used postgres as the database because the data is relational and heroku serves this up realitvely easily with no cost.
+
+PostgreSQL was my database of choice for the deployed application, for the data is relational and Heroku (used for deployment) serves this up realitvely easily, and with no cost.
 
 ## Data Models
 Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them.  
