@@ -10,7 +10,7 @@
   <div class="container d-flex align-items-center justify-content-center signup-form mt-5">
     <div class="row d-flex align-items-center signup-row">
       <div class="col-12 col-md-8 pt-5 pt-md-0">
-        <h3 class='pt-2 pt-md-0'>{% trans "Sign Up" %}</h3>
+        <h2 class='pt-2 pt-md-0 text-uppercase'>{% trans "Sign Up" %}</h2>
         <p>{% blocktrans %}Welcome to the Ceru family!</p>
         <p>Please sign up to get booking!</p>
         <p>Already have an account? Click <a class="link" href="{{ login_url }}">here</a> to login.{% endblocktrans %}</p>
@@ -22,7 +22,7 @@
           {% if redirect_field_value %}
           <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
           {% endif %}
-          <button class="btn btn-signup right mt-4" type="submit">{% trans "Sign Up" %}</button>
+          <button class="btn btn-signup right mt-4" type="submit">{% trans "Sign up" %}</button>
         </form>
       </div>
     </div>

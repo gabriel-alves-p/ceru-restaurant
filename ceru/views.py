@@ -48,7 +48,7 @@ class BookingView(TemplateView):
 
         booking.save()
 
-        return render(request, 'booking_form.html')
+        return redirect('dashboard')
 
 
 class MenuView(TemplateView):
@@ -165,6 +165,7 @@ def update_booking(request, booking_id):
     form = UpdateBookingForm(request.POST or None, instance=booking)
     if form.is_valid():
         form.save()
+        messages.success(request, 'Booking updated successfully.')
         return redirect('dashboard')
     return render(request, 'edit_booking.html', {'booking': booking, 'form': form})  # noqa
 
