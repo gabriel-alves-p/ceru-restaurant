@@ -12,14 +12,20 @@
             <div class="col-12 col-md-8 pt-5 pt-md-0">
                 <h3 class="pt-2 pt-md-0 text-uppercase">Edit Profile</h3>
                 <p>You can update your personal account details on this page.</p>
+                {% for message in messages %}
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>{{message}}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
             </div>
             <div class="col-7 col-sm-6 col-md-4 pb-5 mx-auto py-md-5">
-            <form method="POST">
-                {% csrf_token %}
-                {{ form | crispy }}
-                <a href="{% url 'edit-password' %}" class="link">Change Password</a>
-                <button class="btn btn-signup right mt-4" type="submit">Update Details</button>
-            </form>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <a href="{% url 'edit-password' %}" class="link">Change Password</a>
+                    <button class="btn btn-signup right mt-4" type="submit">Update Details</button>
+                </form>
             </div>
             <a href="{% url 'delete-account' %}" class="link mb-2">Account Deletion</a>
         </div>

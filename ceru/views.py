@@ -47,7 +47,7 @@ class BookingView(TemplateView):
         )
 
         booking.save()
-
+        messages.success(request, 'Booking made successfully.')
         return redirect('dashboard')
 
 
@@ -177,4 +177,5 @@ def delete_booking(request, booking_id):
     """
     booking = Booking.objects.get(pk=booking_id)
     booking.delete()
+    messages.success(request, 'Booking deleted successfully.')
     return redirect('dashboard')
