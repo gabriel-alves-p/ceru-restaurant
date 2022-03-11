@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import generic
+from django.core.mail import send_mail
 from django.views.generic.base import TemplateView
 from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth.forms import PasswordChangeForm
@@ -13,11 +14,33 @@ from .forms import EditProfileForm, UpdateBookingForm, DeleteUser
 
 
 # --------------------------------------------------- CLASS-BASED VIEWS
-class HomeTemplateView(TemplateView):
+# class HomeTemplateView(TemplateView):
+#     """
+#     Home page template view.
+#     """
+#     template_name = 'index.html'
+
+def home_template_view(request):
     """
-    Home page template view.
+    Function
     """
-    template_name = 'index.html'
+    if request.method == "POST":
+        message_first_name = request.POST['firstName']
+        message_last_name = request.POST['lastName']
+        message_email = request.POST['emailAddress']
+        message_mobile = request.POST['phoneNumber']
+        message = request.POST['query']
+
+        send_mail(
+            message_first_name + message_last_name,  # subject
+            message_mobile + message,  # message
+            message_email,  # from
+            ['gabmastantuono@gmail.com', ]  # to mail
+        )
+
+        return render(request, 'index.html', {'message_last_name': message_last_name, 'message_first_name': message_first_name})  # noqa
+    else:
+        return render(request, 'index.html', {})
 
 
 class BookingView(TemplateView):

@@ -108,27 +108,31 @@
             </div>
             <div class="col-md-6 my-5">
                 <h2 class="mb-3 ms-2">Contact Us</h2>
+                {% if message_first_name %}
+                <p>Thank you {{message_first_name}}</p>
+                <p>We have received your message and we will respond within 2 business days.</p>
+                {% else %}
                 <form action="{% url 'home' %}" class="row g-3" method="POST" id="contact-form">
                     {% csrf_token %}
                     <div class="col-md-6 form-floating">
-                        <input type="text" class="form-control" id="firstName" required placeholder="First Name">
+                        <input type="text" class="form-control" id="firstName" name="firstName" required placeholder="First Name">
                         <label for="firstName" class="form-label">First Name</label>
                     </div>
                     <div class="col-md-6 form-floating">
-                        <input type="text" class="form-control" id="lastName" required placeholder="Last Name">
+                        <input type="text" class="form-control" id="lastName" name="lastName" required placeholder="Last Name">
                         <label for="lastName" class="form-label">Last Name</label>
                     </div>
                     <div class="col-md-6 form-floating">
-                        <input type="email" class="form-control" id="emailAddress" required
+                        <input type="email" class="form-control" id="emailAddress" name="emailAddress" required
                             placeholder="E-mail Address">
                         <label for="emailAddress" class="form-label">E-mail Address</label>
                     </div>
                     <div class="col-md-6 form-floating">
-                        <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number (optional)">
+                        <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone Number (optional)">
                         <label for="phoneNumber" class="form-label">Phone Number (optional)</label>
                     </div>
                     <div class="col-md-12 form-floating">
-                        <textarea id="query" class="form-control" style="height: 188px;"
+                        <textarea id="query" name="query" class="form-control" style="height: 188px;"
                             placeholder="Your Query"></textarea>
                         <label for="query" class="form-label">Your Query</label>
                     </div>
@@ -136,6 +140,7 @@
                         <button type="submit" class="btn btn-secondary btn-lg">Send Message</button>
                     </div>
                 </form>
+                {% endif %}
             </div>
         </div>
     </div>

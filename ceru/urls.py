@@ -3,7 +3,7 @@ from ceru import views
 
 
 urlpatterns = [
-    path('', views.HomeTemplateView.as_view(), name='home'),
+    path('', views.home_template_view, name='home'),
     path('booking/', views.BookingView.as_view(), name='booking'),
     path('edit-booking/<booking_id>', views.update_booking, name='edit-booking'),  # noqa
     path('delete-booking/<booking_id>', views.delete_booking, name='delete-booking'),  # noqa
