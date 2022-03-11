@@ -72,6 +72,25 @@ span {
     color: #FFE7BD;
 }
 
+.footer .row {
+    margin-right: 0;
+}
+
+.footer .col-12 {
+    padding-right: 0;
+}
+
+.icon {
+    color: #0C5679 !important;
+    font-size: 45px;
+    text-align: center;
+}
+
+.icon:hover {
+    color: #E5340B !important;
+    transition: 1s;
+}
+
 /* ---------------------------------------------------------------------------------- INDEX.HTML */
 /* ----------------------------------------- HERO IMAGE & INTRO */
 #hero-image {
