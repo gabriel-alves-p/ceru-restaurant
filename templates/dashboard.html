@@ -6,6 +6,12 @@
     <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center py-5">
         <div class="row signup-row">
             <h3 class="my-5 text-center text-uppercase">Your Bookings</h3>
+            {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>{{message}}</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
             {% if booking_list %}
             {% for booking in booking_list %}
             <div class="card mx-auto mb-5" style="width: 18rem;">
