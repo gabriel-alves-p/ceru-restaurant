@@ -6,6 +6,7 @@
     <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center signup-form py-5">
         <div class="col-12 signup-row">
             <h3 class="my-5 text-center text-uppercase">Make a booking</h3>
+            {% if user.is_authenticated %}
             <form action="{% url 'booking' %}" class="col" method="POST" id="booking-form">
                 {% csrf_token %}
                 <div class="row mb-2 mx-0">
@@ -47,7 +48,7 @@
                 <div class="row mb-2 mx-0">
                     <label for="quantity" class="col-10 col-md-3 col-form-label m-auto">Nº of guests</label>
                     <div class="col-10 col-md-8 m-auto">
-                        <input type="number" class="form-control" id="quantity" min="1" max="6" name="quantity"
+                        <input type="number" class="form-control" id="quantity" min="1" max="8" name="quantity"
                             required>
                     </div>
                 </div>
@@ -66,6 +67,17 @@
                     </div>
                 </div>
             </form>
+            <p class="text-center">* For bookings of 9 people or more, please contact us through <a href="{% url 'home' %}#find-us" class="link">here</a>.</p>
+            {% else %}
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <p class="mb-5">You must be logged in to book...</p>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <a href="{% url 'account_login' %}" class="booking-redirect1">
+                    <button class="btn btn-secondary btn-lg mb-5 booking-redirect">Click here to log in!</button>
+                </a>
+            </div>
+            {% endif %}
         </div>
     </div>
 </header>

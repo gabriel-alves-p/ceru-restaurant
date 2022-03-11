@@ -87,7 +87,7 @@ class EditProfileView(generic.UpdateView):
     """
     form_class = EditProfileForm
     template_name = 'edit_profile.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('edit-profile')
 
     def get_object(self):
         """
@@ -101,7 +101,7 @@ class EditPasswordView(PasswordChangeView):
     View to allow users to update their passwords.
     """
     form_class = PasswordChangeForm
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('edit-profile')
 
 
 # --------------------------------------------------- FUNCTION-BASED VIEWS

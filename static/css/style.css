@@ -26,7 +26,7 @@ h6 {
     color: #FFE7BD;
 }
 
-p {
+p, form {
     font-family: 'Poppins', sans-serif;
     color: #FFE7BD;
 }
@@ -91,7 +91,8 @@ span {
 #hero-image button,
 #signup-hero-image button,
 #menus button,
-#find-us button {
+#find-us button,
+.navbtn {
     font-family: 'Poppins', sans-serif;
     background-color: #E5340B;
     color: #FFE7BD;
@@ -100,7 +101,8 @@ span {
 #hero-image button:hover,
 #signup-hero-image button:hover,
 #menus button:hover,
-#find-us button:hover {
+#find-us button:hover,
+.navbtn:hover {
     background-color: #FFE7BD;
     color: #E5340B;
     transition: 1s;
@@ -171,16 +173,16 @@ span {
 }
 
 .signup-row {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     margin-top: 80px;
 }
 
 .link {
-    color: #FFE7BD;
+    color: #FFE7BD !important;
 }
 
 .link:hover {
-    color: #E5340B;
+    color: #E5340B !important;
 }
 
 /* ---------------------------------------------------------------------------------- BOOKING_FORM.HTML */
