@@ -17,11 +17,11 @@
             <form method="POST">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <a href="{% url 'edit-password' %}" class="change-password-link pt-4">Change Password Here</a>
+                <a href="{% url 'edit-password' %}" class="link">Change Password Here</a>
                 <button class="btn btn-signup right mt-4" type="submit">Update Details</button>
             </form>
             </div>
-            <a href="{% url 'delete-account' %}" class="account-deletion-link mb-2">Account Deletion</a>
+            <a href="{% url 'delete-account' %}" class="link mb-2">Account Deletion</a>
         </div>
     </div>
 </header>

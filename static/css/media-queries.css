@@ -2,7 +2,9 @@
 @media (max-width: 767px) {
     
     /* ----------------------------------------- index.html */
-    
+    .about-us-img {
+        height: 300px;
+    }
 
     /* ----------------------------------------- signup.html, login.html, logout.html */
     .signup-row {

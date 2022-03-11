@@ -34,7 +34,7 @@ class UpdateBookingForm(forms.ModelForm):
     email = forms.EmailField(max_length=100, required=True)
     mobile = forms.CharField(max_length=20, required=False)
     time = forms.TimeField(required=True)
-    number_of_guests = forms.IntegerField(required=True, max_value=6, min_value=1)  # noqa
+    number_of_guests = forms.IntegerField(required=True, max_value=8, min_value=1)  # noqa
     notes = forms.CharField(max_length=245, required=False)
 
     class Meta:
