@@ -33,9 +33,8 @@ class UpdateBookingForm(forms.ModelForm):
     last_name = forms.CharField(max_length=50, required=True)
     email = forms.EmailField(max_length=100, required=True)
     mobile = forms.CharField(max_length=20, required=False)
-    date = forms.DateField(required=True)
     time = forms.TimeField(required=True)
-    number_of_guests = forms.NumberInput()
+    number_of_guests = forms.IntegerField(required=True, max_value=6, min_value=1)  # noqa
     notes = forms.CharField(max_length=245, required=False)
 
     class Meta:
@@ -44,7 +43,7 @@ class UpdateBookingForm(forms.ModelForm):
         and fields to display in form.
         """
         model = Booking
-        fields = ('first_name', 'last_name', 'email', 'mobile', 'date', 'time', 'number_of_guests', 'notes')  # noqa
+        fields = ('first_name', 'last_name', 'email', 'mobile', 'time', 'number_of_guests', 'notes')  # noqa
 
 
 # CODE CREDIT https://stackoverflow.com/questions/41653346/remove-user-in-django  # noqa
