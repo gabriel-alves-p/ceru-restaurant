@@ -4,64 +4,64 @@
 
 <header id="booking-hero-image">
     <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center signup-form py-5">
-        <div class="col-11 signup-row">
+        <div class="col-12 signup-row">
             <h3 class="my-5 text-center text-uppercase">Make a booking</h3>
             <form action="{% url 'booking' %}" class="col" method="POST" id="booking-form">
                 {% csrf_token %}
-                <div class="row mb-3">
-                    <label for="firstName" class="col-4 col-md-3 col-form-label text-center">First Name</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="firstName" class="col-10 col-md-3 col-form-label m-auto">First name</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <input type="text" class="form-control" id="firstName" name="fname" required>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="lastName" class="col-4 col-md-3 col-form-label text-center">Last Name</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="lastName" class="col-10 col-md-3 col-form-label m-auto">Last name</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <input type="text" class="form-control" id="lastName" name="lname" required>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="emailAddress" class="col-4 col-md-3 col-form-label text-center">E-mail</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="emailAddress" class="col-10 col-md-3 col-form-label m-auto">E-mail address</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <input type="email" class="form-control" id="emailAddress" name="email" required>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="phoneNumber" class="col-4 col-md-3 col-form-label text-center">Phone Nº</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="phoneNumber" class="col-10 col-md-3 col-form-label m-auto">Mobile phone</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <input type="text" class="form-control" id="phoneNumber" name="mobile">
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="date" class="col-4 col-md-3 col-form-label text-center">Date</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="date" class="col-10 col-md-3 col-form-label m-auto">Date</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <input type="date" class="form-control" id="id_date" name="date" required>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="time" class="col-4 col-md-3 col-form-label text-center">Time</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="time" class="col-10 col-md-3 col-form-label m-auto">Time</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <input type="time" class="form-control" id="time" name="time" min="09:00" max="23:00" required>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="quantity" class="col-4 col-md-3 col-form-label text-center">Nº of guests</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="quantity" class="col-10 col-md-3 col-form-label m-auto">Nº of guests</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <input type="number" class="form-control" id="quantity" min="1" max="6" name="quantity"
                             required>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="requirements" class="col-4 col-md-3 col-form-label text-center">Requirements</label>
-                    <div class="col-7 col-md-8">
+                <div class="row mb-2 mx-0">
+                    <label for="requirements" class="col-10 col-md-3 col-form-label m-auto">Requirements?</label>
+                    <div class="col-10 col-md-8 m-auto">
                         <textarea id="requirements" class="form-control" style="height: 140px;" name="notes"></textarea>
                     </div>
                 </div>
-                <div class="row mb-3 d-flex align-items-center justify-content-center">
+                <div class="row mb-3 mx-0 d-flex align-items-center justify-content-center">
                     <div class="col-10 col-sm-3 my-2 align-items-center">
                         <button type="reset" class="btn btn-secondary btn-lg" id="booking-reset-btn">Reset</button>
                     </div>
-                    <div class="col-10 col-sm-3 my-2 align-items-center">
+                    <div class="col-10 mx-0 col-sm-3 my-2 align-items-center">
                         <button type="submit" class="btn btn-secondary btn-lg" id="booking-submit-btn">Submit</button>
                     </div>
                 </div>
