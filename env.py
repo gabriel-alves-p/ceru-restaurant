@@ -5,3 +5,4 @@ os.environ["SECRET_KEY"] = "CeruSecretKey"
 os.environ["CLOUDINARY_URL"] = "cloudinary://955519997273186:9WXmlkBpP-xrQky-scn7HIfvXtA@gabrielmpalves"  # noqa
 os.environ["DEBUG"] = "True"
 os.environ["EMAIL_HOST_PASSWORD"] = "qazwsx102938"
+os.environ["EMAIL_HOST_USER"] = "cerudiner@gmail.com"

@@ -13,36 +13,6 @@ from .models import Booking
 from .forms import EditProfileForm, UpdateBookingForm, DeleteUser
 
 
-# --------------------------------------------------- CLASS-BASED VIEWS
-# class HomeTemplateView(TemplateView):
-#     """
-#     Home page template view.
-#     """
-#     template_name = 'index.html'
-
-def home_template_view(request):
-    """
-    Function
-    """
-    if request.method == "POST":
-        message_first_name = request.POST['firstName']
-        message_last_name = request.POST['lastName']
-        message_email = request.POST['emailAddress']
-        message_mobile = request.POST['phoneNumber']
-        message = request.POST['query']
-
-        send_mail(
-            message_first_name + message_last_name,  # subject
-            message_mobile + message,  # message
-            message_email,  # from
-            ['cerudiner@gmail.com'],  # to mail
-        )
-
-        return render(request, 'index.html', {'message_first_name': message_first_name})  # noqa
-    else:
-        return render(request, 'index.html', {})
-
-
 class BookingView(TemplateView):
     """
     Booking form page template view.
@@ -135,6 +105,29 @@ class EditPasswordView(PasswordChangeView):
 
 
 # --------------------------------------------------- FUNCTION-BASED VIEWS
+def home_template_view(request):
+    """
+    Function
+    """
+    if request.method == "POST":
+        message_first_name = request.POST['firstName']
+        message_last_name = request.POST['lastName']
+        message_email = request.POST['emailAddress']
+        message_mobile = request.POST['phoneNumber']
+        message = request.POST['query']
+
+        send_mail(
+            message_first_name + message_last_name,  # subject
+            message_mobile + message,  # message
+            message_email,  # from
+            ['cerudiner@gmail.com'],  # to mail
+        )
+
+        return render(request, 'index.html', {'message_first_name': message_first_name})  # noqa
+    else:
+        return render(request, 'index.html', {})
+
+
 def delete_user_view(request):
     """
     Function based view used to delete
