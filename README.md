@@ -37,6 +37,12 @@ The app also aims to reflect the diner itself in its color pallette and vintage 
 
 You can view this web application [here](https://ceru-restaurant.herokuapp.com/).
 
+This is my fourth Portfolio project for my Software Development course with Code Institute.
+
+Inception: 29/01/2022
+
+Submission date: 13/03/2022
+
 ## Technologies
 
 ### Languages
@@ -332,6 +338,10 @@ All of my templates (User Stories and Bug Report) can be viewed [here](https://g
 
 <img width="1073" alt="workflow" src="https://user-images.githubusercontent.com/82375381/157702146-9711110f-3221-4303-adb4-075d7a19fe6a.png">
 
+- Create Epics.
+- Create User Stories that inherit from Epics.
+- Plan milestones from now until submission.
+
 #### Week 2 Milestone - Create repository & deploy.
 - Create GitHub repository using Code Institute's gitpod template.
 
@@ -434,11 +444,22 @@ FURTHER STEPS OF DEPLOYMENT FOLLOWED BEYOND THIS STAGE CAN BE FOUND BELOW IN THE
 #### Week 5 Milestone - Write functionality & style
 - Write HTML, CSS, JavaScript and use Bootstrap for responsiveness on all templates.
 - Once styles and responsiveness are in place, begin writing functionality in forms.py and views.py.
-- Follow same iteration format from 
+- Follow same iteration format from Structure plane to work on each page: write template, style it, write functionality, implement functionality.
 
 #### Week 6 Milestone - Polish off and README.md
+- Set up Django mail to work in settings.py
 
+<img width="521" alt="Screenshot 2022-03-11 at 00 32 10" src="https://user-images.githubusercontent.com/82375381/157797156-dad4ae91-6997-4eb1-a9e5-14c99508853d.png">
 
+- Set up environmental variables for mail settings in env.py
+
+<img width="448" alt="Screenshot 2022-03-11 at 00 32 35" src="https://user-images.githubusercontent.com/82375381/157797184-a71edeaa-a936-4e97-ae9f-f11731b285a3.png">
+
+- Work on README.md file (this documentation).
+
+- Review all code written.
+
+- Ensure all class and function docstrings are well written, clear and concise.
 
 ## Information Architecture
 As part of the requirements for this project you need to have at least 1 original data model.  It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built.
