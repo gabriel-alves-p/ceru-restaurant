@@ -4,3 +4,4 @@ os.environ["DATABASE_URL"] = "postgres://sujkyzogpfsbvl:570e437dcc9d0ba1bb51f582
 os.environ["SECRET_KEY"] = "CeruSecretKey"
 os.environ["CLOUDINARY_URL"] = "cloudinary://955519997273186:9WXmlkBpP-xrQky-scn7HIfvXtA@gabrielmpalves"  # noqa
 os.environ["DEBUG"] = "True"
+os.environ["EMAIL_HOST_PASSWORD"] = "qazwsx102938"
