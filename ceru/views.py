@@ -35,10 +35,10 @@ def home_template_view(request):
             message_first_name + message_last_name,  # subject
             message_mobile + message,  # message
             message_email,  # from
-            ['gabmastantuono@gmail.com', ]  # to mail
+            ['cerudiner@gmail.com'],  # to mail
         )
 
-        return render(request, 'index.html', {'message_last_name': message_last_name, 'message_first_name': message_first_name})  # noqa
+        return render(request, 'index.html', {'message_first_name': message_first_name})  # noqa
     else:
         return render(request, 'index.html', {})
 
