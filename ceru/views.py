@@ -107,7 +107,9 @@ class EditPasswordView(PasswordChangeView):
 # --------------------------------------------------- FUNCTION-BASED VIEWS
 def home_template_view(request):
     """
-    Function
+    Function based view to display
+    home screen and handle contact
+    form POST request.
     """
     if request.method == "POST":
         message_first_name = request.POST['firstName']

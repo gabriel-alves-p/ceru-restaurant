@@ -162,6 +162,8 @@ span {
 }
 
 .carousel-col {
+    overflow: hidden;
+    max-height: 450px;
     padding: 0;
 }
 
