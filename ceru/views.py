@@ -122,7 +122,7 @@ def home_template_view(request):
             message_email,  # from
             ['cerudiner@gmail.com'],  # to mail
         )
-
+        messages.info(request, "Your message has been sent.")
         return render(request, 'index.html', {'message_first_name': message_first_name})  # noqa
     else:
         return render(request, 'index.html', {})

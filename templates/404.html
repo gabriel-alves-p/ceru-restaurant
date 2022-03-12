@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<header id="booking-hero-image">
+    <div class="col-12 col-md-10 col-lg-8 m-auto d-flex align-items-center justify-content-center signup-form py-5">
+        <div class="col-12 signup-row">
+            <h2 class="my-5 text-center text-uppercase">404 PAGE NOT FOUND</h2>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <p class="mb-5">The page you are looking for doesn't exist.</p>
+            </div>
+            <div class="col-12 d-flex align-items-center justify-content-center">
+                <a href="{% url 'home' %}" class="booking-redirect1">
+                    <button class="btn btn-secondary btn-lg mb-5 booking-redirect">Click here to return home!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock content %}
