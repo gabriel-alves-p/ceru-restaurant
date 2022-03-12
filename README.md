@@ -511,21 +511,87 @@ The reading/writing of the activities table is housed in the [what2do2day/activi
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so and how they tie into  your user stories.
-
 ### Implemented Features
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+- Navigation bar shows different links depending on whether the user is logged in or not.
+- EPIC: Home
 
-It's easiest to break this section down into the header, footer, and each page/layer of your website. Call out any differences for mobile vs desktop presentations, **include a screenshot of the implemented feature** and **at least 2 bullet points of their importance**.
+<img width="866" alt="Screenshot 2022-03-12 at 17 31 10" src="https://user-images.githubusercontent.com/82375381/158034014-2eb0cdf7-0304-458a-a7bf-1e87f3cf0bfb.png">
+<img width="976" alt="Screenshot 2022-03-12 at 17 30 58" src="https://user-images.githubusercontent.com/82375381/158034017-f9d14e39-dc25-4ee9-90cc-50fc55d3b1ff.png">
 
-Don't forget your 404 error page.
+- Booking button leads to booking form if user is logged in, or to signup form if user is not logged in.
+- EPIC: Home
+
+<img width="665" alt="Screenshot 2022-03-12 at 17 32 29" src="https://user-images.githubusercontent.com/82375381/158034046-10057e72-a9d3-47f5-85a9-1607595de90b.png">
+
+- About us section informs user of restaurants history.
+- EPIC: Home
+
+<img width="1440" alt="Screenshot 2022-03-12 at 17 33 34" src="https://user-images.githubusercontent.com/82375381/158034054-a5080f98-1326-4ab8-9d4a-8118bada429d.png">
+
+- Menus section provides user with menus. 
+- EPIC: Home
+
+<img width="1440" alt="Screenshot 2022-03-12 at 17 37 02" src="https://user-images.githubusercontent.com/82375381/158034160-13b3d739-a38d-4c6d-bd62-9924d5134792.png">
+
+- Find us section and contact us sections provide user with easy access to our location and any queries they might have.
+- EPIC: Home
+
+<img width="1440" alt="Screenshot 2022-03-12 at 17 38 35" src="https://user-images.githubusercontent.com/82375381/158034259-81d21b02-8b5d-4072-882d-cae9a1c1ab1e.png">
+
+- Footer provides general information about the diner, and is intuitive for the user.
+- EPIC: Home
+
+<img width="784" alt="Screenshot 2022-03-12 at 17 39 56" src="https://user-images.githubusercontent.com/82375381/158034255-8f2c5741-6d85-4c58-99ed-deb3d7ea8e75.png">
+
+- Menus are available to all users, whether logged in or not, so they can decide whether they want to book or not.
+- EPIC: Menus
+
+<img width="1440" alt="Screenshot 2022-03-12 at 17 54 35" src="https://user-images.githubusercontent.com/82375381/158034661-2cf8cde2-edc9-4e0c-bf58-97199d74015e.png">
+
+- Sign up form, easy and intuitive.
+- EPIC: Accounts
+<img width="597" alt="Screenshot 2022-03-12 at 17 56 00" src="https://user-images.githubusercontent.com/82375381/158034694-bf3c79c6-eac2-42fa-98d4-0d32b9892847.png">
+
+- Log in form, easy and intuitive.
+- EPIC: Accounts
+
+<img width="626" alt="Screenshot 2022-03-12 at 17 56 45" src="https://user-images.githubusercontent.com/82375381/158034723-5b699c5c-b586-4ff0-ae8b-288263cc929a.png">
+
+- Booking form, logging in redirects here straight away to maximize revenue.
+- EPIC: Booking
+
+<img width="954" alt="Screenshot 2022-03-12 at 17 59 17" src="https://user-images.githubusercontent.com/82375381/158034778-111ab2a4-4098-4af2-a9bd-ea216fa4f9b4.png">
+
+- Dashboard so user sees their bookings. Admin sees and can manage all bookings. Users can only see and manage their own bookings.
+- Pop up message pops up confirming deletion.
+- EPIC: Booking
+
+<img width="985" alt="Screenshot 2022-03-12 at 18 00 20" src="https://user-images.githubusercontent.com/82375381/158034804-06e76321-ba6c-4727-9304-8640cb3134fc.png">
+<img width="446" alt="Screenshot 2022-03-12 at 18 01 25" src="https://user-images.githubusercontent.com/82375381/158034839-d63bf7fe-4244-4093-afa6-4020712b49a6.png">
+<img width="273" alt="Screenshot 2022-03-12 at 18 01 56" src="https://user-images.githubusercontent.com/82375381/158034853-6263ba49-51d5-4af0-984a-c43e8a15e288.png">
+
+- User can edit their own bookings. Form is pre-populated with their booking details. I purposely left the 'date' field out, fearing it might be giving the user too much freedom. User can cancel their current booking and book a new table if they wish to change the date.
+- EPIC: Booking
+
+<img width="959" alt="Screenshot 2022-03-12 at 18 02 14" src="https://user-images.githubusercontent.com/82375381/158034868-8d25db28-6ccd-4b54-a708-f6ff53c9da8b.png">
+
+- User is able to edit their account details or delete their accounts if they wish to do so. Form is pre-populated with their account details.
+- EPIC: Accounts
+
+<img width="967" alt="Screenshot 2022-03-12 at 18 03 57" src="https://user-images.githubusercontent.com/82375381/158034917-07a37bc4-3d80-4267-b66a-73fc7e4ef8b7.png">
+<img width="913" alt="Screenshot 2022-03-12 at 18 05 19" src="https://user-images.githubusercontent.com/82375381/158034956-9269fbaa-42f9-4f94-ae6f-ba68ec06d78b.png">
+<img width="774" alt="Screenshot 2022-03-12 at 18 06 57" src="https://user-images.githubusercontent.com/82375381/158035033-ed5643c5-d92b-4d0e-863e-92dd428257e0.png">
+
 
 ### Future Features
 
-Use this section to discuss plans for additional features to be implemented in the future:
-
-If you end up not developing some features you hoped to implement, you can include those in this section.
+In the future, I would like to implement the following features onto this web application:
+- Table capping for Admin at 40 guests for any given time.
+- Table plan for the User to choose their table, and see what tables are taken.
+- Reward accumulation for every table booked.
+- Booking automatically disappears once date and time are past.
+- Forgot my password and forgot my username emails sent to user.
 
 ## Testing
 
@@ -585,7 +651,6 @@ Python validation was done using [PEP8 Validator](http://pep8online.com/) on all
 
 <img width="987" alt="manage" src="https://user-images.githubusercontent.com/82375381/157996512-555ee4c1-7b9d-4d69-bcde-484e02263812.png">
 
-
 CSS validation was done using [CSS Validator](https://jigsaw.w3.org/css-validator/) on all css files in the app.
 
 - style.css
@@ -607,13 +672,11 @@ JavaScript validation was done using [JavaScript Validation](https://jshint.com)
 
 <img width="1060" alt="js" src="https://user-images.githubusercontent.com/82375381/157996558-7e2b87a6-ace8-454b-b7a9-96feaaf138ac.png">
 
-
 HTML validation was done using [HTML Validator](https://validator.w3.org/) on all html files in the app.
 
 - index.html
 
 <img width="469" alt="index" src="https://user-images.githubusercontent.com/82375381/158030224-7a0cb53b-2fdf-4a4c-be86-30d865e1dafa.png">
-
 
 - menus.html
 
@@ -690,6 +753,14 @@ Create Custom Issue Template and a milestone in git hub.[Here's a brief overview
 ## Defects
 
 I kept track of my bugs in real time. You can view them and their details [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/2) or by clicking on the 'Projects' and then 'Bug Report' on this repository on GitHub.
+
+- I accidentally leaked my env.py file to GitHub. In the process of fixing it, I accidentally cloned all of my commits, so there are two of every commit.
+- In the end, I managed to delete all history of my env.py on GitHub, and as a safety caution, I changed all of my keys and created a new env.py file.
+I used the following urls to solve this issue (as well as the help of my lovely mentor Malia Havlicek):
+- https://careerkarma.com/blog/git-remove-remote/#:~:text=The%20git%20remote%20remove%20command%20removes%20a%20remote%20from%20a,rm%20
+- https://stackoverflow.com/questions/32056324/there-is-no-tracking-information-for-the-current-branch
+- https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/delete-remote-Git-branches-github-gitlab-bitbucket-tracking-local
+- https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository#using-git-filter-repo
 
 ## Lighthouse Audits
 
