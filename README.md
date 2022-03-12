@@ -644,12 +644,16 @@ HTML validation was done using [HTML Validator](https://validator.w3.org/) on al
 <img width="500" alt="account-deletion" src="https://user-images.githubusercontent.com/82375381/158030256-b8ee8cef-d7e2-4963-876c-f59a84da0992.png">
 
 - edit-password.html
-- Errors found within Django's own 
+- Errors found within Django's own HTML form, I rendered the form with {% form | crispy %}, but this extension seems to have the HTML error below.
+
 <img width="1080" alt="edit-password" src="https://user-images.githubusercontent.com/82375381/158030259-7f43a15b-9e73-4fae-a2ca-43b24f850976.png">
+
+- Here is the documentation snippet for this Django class.
+<img width="694" alt="Screenshot 2022-03-12 at 15 52 38" src="https://user-images.githubusercontent.com/82375381/158031041-274c5afe-b7fb-43ac-bb51-6bab6fb9acc5.png">
 
 - edit-profile.html
 
-<img width="907" alt="edit-profile" src="https://user-images.githubusercontent.com/82375381/158030262-a30d58eb-18df-46d2-9be0-3e63b9c20c9b.png">
+<img width="469" alt="edit-profile" src="https://user-images.githubusercontent.com/82375381/158030824-39274e1f-b02e-411b-b771-7351980d3f5c.png">
 
 - 404.html
 
