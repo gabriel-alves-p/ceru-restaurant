@@ -138,7 +138,6 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 <img width="1423" alt="logout-screenshot" src="https://user-images.githubusercontent.com/82375381/157677897-783f9a10-c9db-4a16-b087-ae2fbb9ac937.png">
 
-
 #### Edit Account Page
 > - Hero image chosen for all pages account related.
 > - A section with a title, text explaining the page, and a link to the account deletion page.
@@ -290,6 +289,14 @@ Below you can find a snippet of the JavaScript code used.
 
 ## Agile Process
 
+### User Stories
+
+I followed Agile process and used GitHub issues to store my User Stories. They were created from the Epics above and were prioritized and ordered from "Must have", and "Should have", to "Could have", according to the Agile Process taught in one of the Code Institute lessons.
+
+You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/1) or by clicking on 'Projects' and then 'User Stories' on this repository on GitHub.
+
+All of my templates (User Stories and Bug Report) can be viewed [here](https://github.com/gabriel-alves-p/ceru-restaurant/issues/new/choose) or by clicking on 'Issues' and then 'New Issue' on this repository on GitHub.
+
 ### Epics
 
 <img width="800" alt="epic1-1" src="https://user-images.githubusercontent.com/82375381/157558739-bc676c71-cd9d-42f5-a2c2-0d940229f463.png">
@@ -307,14 +314,6 @@ Below you can find a snippet of the JavaScript code used.
 <img width="800" alt="epic4-1" src="https://user-images.githubusercontent.com/82375381/157570221-69f6dcb2-1015-4e8e-9b81-748e5c4f27fb.png">
 <img width="800" alt="epic4-2" src="https://user-images.githubusercontent.com/82375381/157570232-c1a18ddf-0310-430b-82aa-77f597440c35.png">
 <img width="800" alt="epic4-3" src="https://user-images.githubusercontent.com/82375381/157570239-749e46be-15d7-4dc4-b1ce-f36d0fe6a527.png">
-
-### User Stories
-
-I followed Agile process and used GitHub issues to store my User Stories. They were created from the Epics above and were prioritized and ordered from "Must have", and "Should have", to "Could have", according to the Agile Process taught in one of the Code Institute lessons.
-
-You can view my User Stories [here](https://github.com/gabriel-alves-p/ceru-restaurant/projects/1) or by clicking on 'Projects' and then 'User Stories' on this repository on GitHub.
-
-All of my templates (User Stories and Bug Report) can be viewed [here](https://github.com/gabriel-alves-p/ceru-restaurant/issues/new/choose) or by clicking on 'Issues' and then 'New Issue' on this repository on GitHub.
 
 ### Development / Iterations
 
@@ -610,6 +609,55 @@ JavaScript validation was done using [JavaScript Validation](https://jshint.com)
 
 
 HTML validation was done using [HTML Validator](https://validator.w3.org/) on all html files in the app.
+
+- index.html
+
+<img width="469" alt="index" src="https://user-images.githubusercontent.com/82375381/158030224-7a0cb53b-2fdf-4a4c-be86-30d865e1dafa.png">
+
+
+- menus.html
+
+<img width="485" alt="menus" src="https://user-images.githubusercontent.com/82375381/158030229-bf0c2a4b-cfb5-4236-bf7c-b05850b096e2.png">
+
+- signup.html
+
+<img width="477" alt="signup" src="https://user-images.githubusercontent.com/82375381/158030232-16609b77-e2ab-44a8-855f-a69de398cffa.png">
+
+- login.html
+
+<img width="480" alt="login" src="https://user-images.githubusercontent.com/82375381/158030237-c0b7597c-7674-4a6b-9ec5-2a5588526ea3.png">
+
+- booking_form.html
+
+<img width="476" alt="bookingform" src="https://user-images.githubusercontent.com/82375381/158030241-933a97eb-e167-463d-9171-54ec9b371143.png">
+
+- dashboard.html
+
+<img width="479" alt="dashboard" src="https://user-images.githubusercontent.com/82375381/158030245-6358d141-4628-481c-97e8-a8f0c8fa9f04.png">
+
+- edit-booking.html
+
+<img width="474" alt="edit-booking" src="https://user-images.githubusercontent.com/82375381/158030251-a29cc8bf-c39a-4731-936b-93241a51de81.png">
+
+- delete-account.html
+
+<img width="500" alt="account-deletion" src="https://user-images.githubusercontent.com/82375381/158030256-b8ee8cef-d7e2-4963-876c-f59a84da0992.png">
+
+- edit-password.html
+- Errors found within Django's own 
+<img width="1080" alt="edit-password" src="https://user-images.githubusercontent.com/82375381/158030259-7f43a15b-9e73-4fae-a2ca-43b24f850976.png">
+
+- edit-profile.html
+
+<img width="907" alt="edit-profile" src="https://user-images.githubusercontent.com/82375381/158030262-a30d58eb-18df-46d2-9be0-3e63b9c20c9b.png">
+
+- 404.html
+
+<img width="475" alt="404" src="https://user-images.githubusercontent.com/82375381/158030266-63d5d683-a9a2-443c-973a-34e39b2fee66.png">
+
+- 500.html
+
+<img width="477" alt="500" src="https://user-images.githubusercontent.com/82375381/158030270-185ec1e7-28d6-49ad-b4ef-7d3a7885be0e.png">
 
 
 ### Cross Browser and Cross Device Testing
