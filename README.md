@@ -1,23 +1,3 @@
-
-# OVERVIEW
-
-This template was made as a guide to ensure you cover assessment criteria in your fourth portfolio write up. It is specific to the **PORTFOLIO 4: Full-Stack Toolkit** project. 
-
-## Helpful tools
-
-Markdown's not all that easy so sometimes you may want to use some tools to make tables. 
-
-- [Markdown Cheatsheet](https://guides.github.com/features/mastering-markdown/)
-- [markdown table generator](https://www.tablesgenerator.com/markdown_tables) - used to help with documentation table formatting
-- [mardown table of contents generator](https://ecotrust-canada.github.io/markdown-toc/) - used to create table of contents (be weary it does have some bugs if you have dashes or trailing spaces in your headers)
-- [readme.so](https://readme.so/) - if you don't want to learn markdown, this tool might help you
-
-# Table of Contents
-Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a table of contents.  This will help assessors to see the structure of your readme. Just test it out ast this tool isn't perfect. It tends to mess up with special characters like dashes.
-
-====================================== The Sections you Fill in are below ==============================
-
-
 # CERU - AUTHENTIC AMERICAN DINER
 
 <img width="977" alt="responsive-app" src="https://user-images.githubusercontent.com/82375381/157510961-1f9b70d1-6980-4699-9196-c7417c2ca87a.png">
@@ -27,6 +7,73 @@ Copy your readme to http://ecotrust-canada.github.io/markdown-toc/ to make a tab
 Gabriel Alves
 
 You can visit my GitHub page [here](https://github.com/gabriel-alves-p).
+
+# Table of Contents
+
+- [Project Overview](#project-overview)
+- [Technologies](#technologies)
+  * [Languages](#languages)
+  * [Libraries & Frameworks](#libraries---frameworks)
+  * [Django Extensions](#django-extensions)
+  * [Database](#database)
+  * [Deployment, Repository & Media](#deployment--repository---media)
+- [UX](#ux)
+  * [Project Goals / Strategy Plane](#project-goals---strategy-plane)
+  * [Scope Plane](#scope-plane)
+    + [Home Page](#home-page)
+    + [Menus Page](#menus-page)
+    + [Sign Up Page](#sign-up-page)
+    + [Login Page](#login-page)
+    + [Logout Page](#logout-page)
+    + [Edit Account Page](#edit-account-page)
+    + [Delete Account Page](#delete-account-page)
+    + [Change Password Page](#change-password-page)
+    + [Make a Booking Page](#make-a-booking-page)
+    + [View Bookings Page](#view-bookings-page)
+    + [Edit a Booking Page](#edit-a-booking-page)
+  * [Structure Plane](#structure-plane)
+  * [Skeleton Plane](#skeleton-plane)
+    + [Balsamiq Wireframes](#balsamiq-wireframes)
+  * [Colors](#colors)
+  * [Typography](#typography)
+  * [Images](#images)
+  * [Animations and Transitions](#animations-and-transitions)
+  * [Custom Styles](#custom-styles)
+  * [Custom Javascript](#custom-javascript)
+- [Agile Process](#agile-process)
+  * [User Stories](#user-stories)
+  * [Epics](#epics)
+  * [Development / Iterations](#development---iterations)
+    + [Week 1 Milestone - Project inception & planning.](#week-1-milestone---project-inception---planning)
+    + [Week 2 Milestone - Create repository & deploy.](#week-2-milestone---create-repository---deploy)
+    + [Week 3 Milestone - Set up basics & find images online for content](#week-3-milestone---set-up-basics---find-images-online-for-content)
+    + [Week 4 Milestone - Write basic templates, views and urls](#week-4-milestone---write-basic-templates--views-and-urls)
+    + [Week 5 Milestone - Write functionality & style](#week-5-milestone---write-functionality---style)
+    + [Week 6 Milestone - Polish off and README.md](#week-6-milestone---polish-off-and-readmemd)
+- [Information Architecture](#information-architecture)
+  * [Database Choice](#database-choice)
+  * [Data Models](#data-models)
+  * [CRUD Diagrams](#crud-diagrams)
+- [Features](#features)
+  * [Implemented Features](#implemented-features)
+  * [Future Features](#future-features)
+- [Testing](#testing)
+  * [Validation Testing](#validation-testing)
+  * [Cross Browser and Cross Device Testing](#cross-browser-and-cross-device-testing)
+  * [Manual Testing](#manual-testing)
+- [Defects](#defects)
+- [Lighthouse Audits](#lighthouse-audits)
+- [Deployment](#deployment)
+  * [Requirements](#requirements)
+  * [GitHub](#github)
+  * [In your IDE](#in-your-ide)
+  * [Heroku](#heroku)
+- [Credits](#credits)
+- [Media / Content](#media---content)
+- [Acknowledgments](#acknowledgments)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 
 ## Project Overview
 
@@ -91,6 +138,7 @@ Deadline: 13/03/2022
 Features that, based on the strategy plane above, made it onto the web app include:
 
 #### Home Page
+
 > - Same navigation bar shared across all pages, checks whether user is authenticated or not and displays links accordingly. Has logo on top left corner.
 > - Toggle menu icon appears and links hide when under 768px screen width.
 > - Hero image on home page.
@@ -124,6 +172,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 
 #### Login Page
+
 > - Hero image chosen for all pages account related.
 > - A section with a title, two paragraphs explaining the page, a link to take the user to the sign up page.
 > - A login form using crispy forms and allauth (username and password inputs, and a submit button).
@@ -132,6 +181,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 
 #### Logout Page
+
 > - Hero image chosen for all pages account related.
 > - A section with a title, text asking the user if they want to log out.
 > - A logout button using allauth.
@@ -139,6 +189,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 <img width="1423" alt="logout-screenshot" src="https://user-images.githubusercontent.com/82375381/157677897-783f9a10-c9db-4a16-b087-ae2fbb9ac937.png">
 
 #### Edit Account Page
+
 > - Hero image chosen for all pages account related.
 > - A section with a title, text explaining the page, and a link to the account deletion page.
 > - A form for the user to update their account details using crispy forms (pre filled: email and username, and a submit button)
@@ -148,6 +199,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 
 #### Delete Account Page
+
 > - Hero image chosen for all pages account related.
 > - A section with a title, warning text asking the user if they want to delete their account, a link to return home.
 > - Delete account form using crispy forms ('Are you sure you want to delete your account?' and a submit button).
@@ -156,6 +208,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 
 #### Change Password Page
+
 > - Hero image chosen for all pages account related.
 > - A section with a title.
 > - Change password form using crispy forms (old password, new password1, and new password2 inputs, and a submit button).
@@ -164,6 +217,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 
 #### Make a Booking Page
+
 > - Hero image chosen for all pages booking related.
 > - A section with a title.
 > - A booking form using html (first name, last name, email, mobile phone, date, time, number of guests, and requirements inputs, a reset, and a submit button).
@@ -172,6 +226,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 
 #### View Bookings Page
+
 > - Hero image chosen for all pages booking related.
 > - A section with a title.
 > - Cards representing bookings (title, last name, first name, date, time, edit button, cancel button).
@@ -184,6 +239,7 @@ Features that, based on the strategy plane above, made it onto the web app inclu
 
 
 #### Edit a Booking Page
+
 > - Hero image chosen for all pages booking related.
 > - A section with a title.
 > - A pre-filled booking form using crispy forms (first name, last name, email, mobile phone, date, time, number of guests, and requirements inputs, and a submit button).
@@ -462,41 +518,18 @@ FURTHER STEPS OF DEPLOYMENT FOLLOWED BEYOND THIS STAGE CAN BE FOUND BELOW IN THE
 
 - Ensure all class and function docstrings are well written, clear and concise.
 
-## Information Architecture
-As part of the requirements for this project you need to have at least 1 original data model.  It's this section that discusses your data and how each piece relates to another and draws out the CRUD functionality you built.
-
-### Entity Relationship Diagram
-Wade Williams wrote a great blog about how to add a django extension to auto create an ERD. https://wadewilliams.com/technology-software/generating-erd-for-django-applications/ You can always draw one out by hand or google sheets. You can also draw this up by hand if you want or use a spreadsheet to show your data model. 
+## Information Architecture 
 
 ### Database Choice
 
 PostgreSQL was my database of choice for the deployed application, for the data is relational and Heroku (used for deployment) serves this up realitvely easily, and with no cost.
 
 ### Data Models
-Show the accessors you know your data. If you end up using some data models from an example project, call that out and don't be as detailed about writing those up unless you added to them. 
+Profile model created from Django User model.
+<img width="523" alt="data-models" src="https://user-images.githubusercontent.com/82375381/157699276-dff9db71-2040-4965-9bbd-73a64430bc38.png">
 
-Each data model that you created yourself should have its Fields, Field Type and any validation documented.  You should also cross-reference any code in your repository that relate to CREATE, READ, UPDATE, DELETE operations for these models. 
-
-Below is an example of a write up for an Activies Data Model
-### Activities Model
-Activities is a table to hold a unique icon image and name values that users have associated with events and places. It helps with sorting events and prevents the need from carrying around two data objects in the larger Events and Places data structures. The purpose of an Activities object is to provide an imagery association to a category.
-
-| DB Key 	| Data Type 	|          Purpose          	| Form Validation                        	| DB processing    	|
-|--------	|:---------:	|:-------------------------:	|----------------------------------------	|------------------	|
-| _id    	| ObjectId  	| unique identifier         	| None                                   	| n/a              	|
-| name   	| String    	| Name of Activity          	| Required<br>Min 1 char<br>Max 50 chars 	| trim<br>to lower 	|
-| icon   	| String    	| system path to image file 	| Required                               	|                  	|
-
-Activity entries are used by events, places and filtering.
-
-- [x] Create - An activity is potentially created when a user successfully creates a place, creates an event, updates an event, or updates a place. 
-- [x] Read - The Activities table is read when a user is adding an event, updating an event, adding a place or updating a place, to determine if a new value should be created or not. The activities table is queried for using the name and icon pair, if it is found, the ObjectId is passed to the event and places. If no match is found, a new Activity is created and that ObjectID is passed to the the place or event.
-- [ ] Update
-- [ ] Delete
- 
- This table has no deletion or updates associated with it. It's strictly create and read. Eventually, maintenance scripts should be written to delete unused/deprecated entries.
-
-The reading/writing of the activities table is housed in the [what2do2day/activities/views.py](what2do2day/activities/views.py) file.
+Booking model created from Django User model.
+<img width="525" alt="data-models2" src="https://user-images.githubusercontent.com/82375381/157699285-b38adae4-cade-4edf-ae0b-0570c5bb9fee.png">
 
 ### CRUD Diagrams
 
@@ -534,10 +567,11 @@ The reading/writing of the activities table is housed in the [what2do2day/activi
 
 <img width="1440" alt="Screenshot 2022-03-12 at 17 37 02" src="https://user-images.githubusercontent.com/82375381/158034160-13b3d739-a38d-4c6d-bd62-9924d5134792.png">
 
-- Find us section and contact us sections provide user with easy access to our location and any queries they might have.
+- Find us section and contact us sections provide user with easy access to our location and any queries they might have. Admin set up in env.py receives email.
 - EPIC: Home
 
 <img width="1440" alt="Screenshot 2022-03-12 at 17 38 35" src="https://user-images.githubusercontent.com/82375381/158034259-81d21b02-8b5d-4072-882d-cae9a1c1ab1e.png">
+<img width="498" alt="Screenshot 2022-03-12 at 18 13 12" src="https://user-images.githubusercontent.com/82375381/158035191-6670c157-b340-4901-9f9d-e5551469a4c7.png">
 
 - Footer provides general information about the diner, and is intuitive for the user.
 - EPIC: Home
@@ -583,7 +617,6 @@ The reading/writing of the activities table is housed in the [what2do2day/activi
 <img width="913" alt="Screenshot 2022-03-12 at 18 05 19" src="https://user-images.githubusercontent.com/82375381/158034956-9269fbaa-42f9-4f94-ae6f-ba68ec06d78b.png">
 <img width="774" alt="Screenshot 2022-03-12 at 18 06 57" src="https://user-images.githubusercontent.com/82375381/158035033-ed5643c5-d92b-4d0e-863e-92dd428257e0.png">
 
-
 ### Future Features
 
 In the future, I would like to implement the following features onto this web application:
@@ -594,10 +627,6 @@ In the future, I would like to implement the following features onto this web ap
 - Forgot my password and forgot my username emails sent to user.
 
 ## Testing
-
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ### Validation Testing
 
@@ -726,9 +755,7 @@ HTML validation was done using [HTML Validator](https://validator.w3.org/) on al
 
 <img width="477" alt="500" src="https://user-images.githubusercontent.com/82375381/158030270-185ec1e7-28d6-49ad-b4ef-7d3a7885be0e.png">
 
-
 ### Cross Browser and Cross Device Testing
-Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints.
 
 | TOOL / Device                 | BROWSER     | OS         | SCREEN WIDTH  |
 |-------------------------------|-------------|------------|---------------|
@@ -744,11 +771,49 @@ Create a table that lists out what devices, browsers, and operating system you t
 
 ### Manual Testing
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. 
+- If user tries creating an account that already exists:
 
-At this point you really should be using GITHUB's Issues to track these as it helps you with the AGILE process requirement.
+<img width="268" alt="Screenshot 2022-03-12 at 18 33 48" src="https://user-images.githubusercontent.com/82375381/158035984-3c5c353d-50cc-4a92-ac5b-82020b2e4643.png">
 
-Create Custom Issue Template and a milestone in git hub.[Here's a brief overview](https://docs.google.com/document/d/1nDS5tZeMO77Dfq85IZGMSV6C41XaPm9FwcpR3k-UTVc/edit?usp=sharing) I put together on how to do this.
+- If user's passwords do not match:
+
+<img width="254" alt="Screenshot 2022-03-12 at 18 34 23" src="https://user-images.githubusercontent.com/82375381/158036001-ba6be75f-271c-4f12-9262-f4fc2aa1b33f.png">
+
+- If when logging in, user's details are wrong:
+
+<img width="330" alt="Screenshot 2022-03-12 at 18 35 28" src="https://user-images.githubusercontent.com/82375381/158036007-270b3bea-3008-4427-95fa-d61ae5862a71.png">
+
+- If any of the required booking form fields are left blank:
+
+<img width="664" alt="Screenshot 2022-03-12 at 18 36 02" src="https://user-images.githubusercontent.com/82375381/158036023-fab10b5b-b7be-4a65-bdc7-d6f390678606.png">
+<img width="662" alt="Screenshot 2022-03-12 at 18 36 19" src="https://user-images.githubusercontent.com/82375381/158036033-b4c97588-dc6f-422d-96ef-b49716848148.png">
+<img width="686" alt="Screenshot 2022-03-12 at 18 36 55" src="https://user-images.githubusercontent.com/82375381/158036205-e1b3bef8-e531-4fce-a359-9f423773fb16.png">
+<img width="676" alt="Screenshot 2022-03-12 at 18 37 05" src="https://user-images.githubusercontent.com/82375381/158036208-abfbffb1-d935-47a8-97cb-2b88604851e7.png">
+
+- User cannot choose a date in the past to book a table:
+
+<img width="237" alt="Screenshot 2022-03-12 at 18 36 32" src="https://user-images.githubusercontent.com/82375381/158036198-0a9912e7-5a08-4039-83f0-763fe52efb76.png">
+
+- User only sees their own bookings, unless admin:
+
+<img width="963" alt="Screenshot 2022-03-12 at 18 39 30" src="https://user-images.githubusercontent.com/82375381/158036227-f8f2e3d4-50a3-4f31-8cf3-503621fdd522.png">
+<img width="720" alt="Screenshot 2022-03-12 at 18 46 56" src="https://user-images.githubusercontent.com/82375381/158036254-959ca8ea-b239-40c3-8e86-926db086e3b6.png">
+
+- Confirmation pops up before deletion of booking:
+
+<img width="448" alt="Screenshot 2022-03-12 at 18 47 03" src="https://user-images.githubusercontent.com/82375381/158036259-9c7df859-5b3a-4d60-bc2d-be450add13c8.png">
+
+- Account deletion form requires confirmation by user:
+
+<img width="627" alt="Screenshot 2022-03-12 at 18 39 13" src="https://user-images.githubusercontent.com/82375381/158036274-47cfadaf-edb4-489e-ad03-8b3212538638.png">
+
+- If wrong old password is given when updating password:
+
+<img width="509" alt="Screenshot 2022-03-12 at 18 39 55" src="https://user-images.githubusercontent.com/82375381/158036302-79bf365b-575e-431d-b4d4-1ddb7bb3472c.png">
+
+- If both new passwords don't match when updating password:
+
+<img width="299" alt="Screenshot 2022-03-12 at 18 40 11" src="https://user-images.githubusercontent.com/82375381/158036312-984e342c-d2e9-4bdf-a03e-4f0034fb7a2c.png">
 
 ## Defects
 
@@ -850,22 +915,23 @@ pip3 install -r requirements.txt
 
 ## Credits
 
-To avoid plagiarism amd copyright infringement, you should mention any other projects, stackoverflow, videos, blogs, etc that you used to gather imagery or ideas for your code even if you used it as a starting point and modified things. Giving credit to other people's efforts and ideas that saved you time acknowledges the hard work others did. 
+## Media / Content
 
--[Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
-    - The Template for the GUI for this project was provided by Code Institute. This allows for the Command line to be shown and used within the browser.
-
-## Content
-
-Use bullet points to list out sites you copied text from and cross-reference where those show up on your site
-
-## Media
-
-Make a list of sites you used images from. If you used several sites try to match up each image to the correct site. This includes attribution for icons if they came from font awesome or other sites, give them credit.
+- https://docs.djangoproject.com/en/4.0/topics/auth/default/
+- https://stackoverflow.com/questions/41653346/remove-user-in-django
+- [Code Institute Template](https://github.com/Code-Institute-Org/python-essentials-template)
+- https://www.rubys.com/
+- https://www.camdendiner.com/
+- https://www.shutterstock.com/
+- https://unsplash.com/
+- https://icons.getbootstrap.com/
+- https://fontawesome.com/
 
 ## Acknowledgments
 
-This is the section where you refer to code examples, mentors, blogs, stack overflow answers and videos that helped you accomplish your end project. Even if it's an idea that you updated you should note the site and why it was important to your completed project.
-
-If you used a CodeInstitute Instructional project as a starting point. Make note of that here too.
-
+- Malia Havlicek (Code Institute mentor) for getting me out of some pickles, and being supportive and caring towards my project.
+- Code Institute for providing me with a project idea and the content from which I learned these skills from.
+- [Bootstrap](https://getbootstrap.com/) documentation for being super easy to follow.
+- [Django](https://docs.djangoproject.com/en/4.0/) documentation for teaching me so much.
+- [Codemy.com](https://www.youtube.com/channel/UCFB0dxMudkws1q8w5NJEAmw) youtube channel for teaching me lessons that were extremely valuable to this project.
+- [freeCodeCamp.org](https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ) youtube channel for teaching me lots too.
