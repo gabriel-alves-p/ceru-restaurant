@@ -533,13 +533,82 @@ In this section, you need to convince the assessor that you have conducted enoug
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 ### Validation Testing
-You should try to ensure you code is valid and follows proper indentation.  In this section you should write up any websites you used to validate your code. As your projects becomes more complex these tools may change.
 
-- [CSS Validator](https://jigsaw.w3.org/css-validator/) Note, any error associated with root: color variables were ignored.
-- [HTML Validator](https://validator.w3.org/) NOTE: You may need to view the source of each page and paste that into the validator
-- [JS validation](https://jshint.com) for each .js file/ , if using ES6, add this before pasting in your file: `/*jshint esversion: 6 */ `
-- [JSON validation](https://jsonlint.com/) for each .json file 
-- [PEP8 Validator](http://pep8online.com/) include a screenshot of results. (you should do this for all .py files in your repo, or note that there are no red errors in gitpod after the file is saved)
+Python validation was done using [PEP8 Validator](http://pep8online.com/) on all python files in the app.
+
+- settings.py
+
+<img width="987" alt="settings" src="https://user-images.githubusercontent.com/82375381/157996389-431c6fab-a804-4034-8c51-7825e70c1700.png">
+
+- urls.py (ceru_restaurant directory)
+
+<img width="980" alt="urls1" src="https://user-images.githubusercontent.com/82375381/157996404-9deee6d4-883c-442d-8080-92dfe9e3ec1d.png">
+
+- wsgi.py
+
+<img width="999" alt="wsgi" src="https://user-images.githubusercontent.com/82375381/157996410-a22f2841-5434-43e8-a8d2-6a25f65c659a.png">
+
+- admin.py
+
+<img width="945" alt="admin" src="https://user-images.githubusercontent.com/82375381/157996423-251a2f80-0d0f-46a6-9290-29708831b419.png">
+
+- apps.py
+
+<img width="958" alt="apps" src="https://user-images.githubusercontent.com/82375381/157996435-4bd024a2-a3f9-4a78-83eb-cd463fc7d17a.png">
+
+- forms.py
+
+<img width="967" alt="forms" src="https://user-images.githubusercontent.com/82375381/157996451-54ddbd0e-f011-4d1c-821a-15012cda9024.png">
+
+- models.py
+
+<img width="983" alt="models" src="https://user-images.githubusercontent.com/82375381/157996460-a7ada14a-b86a-466f-bc61-8b0b5092feb1.png">
+
+- signals.py
+
+<img width="969" alt="signals" src="https://user-images.githubusercontent.com/82375381/157996470-4300c31f-cc45-46aa-9ad0-b2ec1ae429b4.png">
+
+- urls.py (ceru directory)
+
+<img width="964" alt="urls2" src="https://user-images.githubusercontent.com/82375381/157996487-0977a282-5ca8-4814-8534-fa8dec3ab9cc.png">
+
+- views.py
+
+<img width="964" alt="views" src="https://user-images.githubusercontent.com/82375381/157996497-8bf71472-1807-4a3e-8742-159a09c26c8e.png">
+
+- env.py
+
+<img width="989" alt="env" src="https://user-images.githubusercontent.com/82375381/157996504-fd0957f2-d7b8-49b3-ad83-11e84b2a7081.png">
+
+- manage.py
+
+<img width="987" alt="manage" src="https://user-images.githubusercontent.com/82375381/157996512-555ee4c1-7b9d-4d69-bcde-484e02263812.png">
+
+
+CSS validation was done using [CSS Validator](https://jigsaw.w3.org/css-validator/) on all css files in the app.
+
+- style.css
+
+<img width="656" alt="style" src="https://user-images.githubusercontent.com/82375381/157996522-d045e94c-bac1-40ea-819a-1d5506589ebc.png">
+
+- media-queries.css
+
+<img width="651" alt="media-queries" src="https://user-images.githubusercontent.com/82375381/157996536-fb359111-f686-4d89-a579-180f1b1e3724.png">
+
+- edit_profile.css
+
+<img width="654" alt="edit-profile" src="https://user-images.githubusercontent.com/82375381/157996551-a3ad39b2-3be6-4e21-a3ef-898e110cc935.png">
+
+
+JavaScript validation was done using [JavaScript Validation](https://jshint.com) on all js files in the app.
+
+- script.js
+
+<img width="1060" alt="js" src="https://user-images.githubusercontent.com/82375381/157996558-7e2b87a6-ace8-454b-b7a9-96feaaf138ac.png">
+
+
+HTML validation was done using [HTML Validator](https://validator.w3.org/) on all html files in the app.
+
 
 ### Cross Browser and Cross Device Testing
 Create a table that lists out what devices, browsers, and operating system you tested your application on and a brief description of why you chose the mixture you did. The point is to prove that you looked at the site across various browsers, operating systems, and viewport breakpoints.
