@@ -56,9 +56,9 @@
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'booking' %}">
-                            <button type="button" class="btn btn-secondary navbtn">Book with us!</button>
-                        </a>
+                        <form action="{% url 'booking' %}" class="hero-form">
+                            <input type="submit" value="Book with us!" class="hero-btn btn btn-secondary navbtn">
+                        </form>
                     </li>
                     {% else %}
                     <li class="nav-item">
@@ -68,9 +68,9 @@
                         <a class="nav-link" href="{% url 'account_login' %}">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'account_login' %}">
-                            <button type="button" class="btn btn-secondary navbtn">Book with us!</button>
-                        </a>
+                        <form action="{% url 'account_login' %}" class="hero-form">
+                            <input type="submit" value="Book with us!" class="hero-btn btn btn-secondary navbtn">
+                        </form>
                     </li>
                     {% endif %}
                 </ul>
