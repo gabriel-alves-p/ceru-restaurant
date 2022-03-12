@@ -22,14 +22,14 @@
                     <p class="card-text">For the {{ booking.date }}</p>
                     <p class="card-text">At {{ booking.time }}</p>
                     <p class="card-text">Made on {{ booking.created_on }}</p>
-                    <a href="{% url 'edit-booking' booking.id %}" class="link">
+                    <form action="{% url 'edit-booking' booking.id %}" class="link">
                         <button class="btn btn-secondary update-link">Update Booking</button>
-                    </a>
-                    <a href="{% url 'delete-booking' booking.id %}" class="link">
+                    </form>
+                    <form action="{% url 'delete-booking' booking.id %}" class="link">
                         <button class="btn btn-secondary cancel-link" onclick="return confirm('Are you sure?')">
                             Cancel Booking
                         </button>
-                    </a>
+                    </form>
                 </div>
             </div>
             {% endfor %}
@@ -39,15 +39,15 @@
             </div>
             {% if user.is_authenticated %}
             <div class="col-12 d-flex align-items-center justify-content-center">
-                <a href="{% url 'booking' %}" class="booking-redirect1">
+                <form action="{% url 'booking' %}" class="booking-redirect1">
                     <button class="btn btn-secondary btn-lg mb-5 booking-redirect">Click here to get booking!</button>
-                </a>
+                </form>
             </div>
             {% else %}
             <div class="col-12 d-flex align-items-center justify-content-center">
-                <a href="{% url 'accounts/signup' %}" class="booking-redirect1">
+                <form action="{% url 'accounts/signup' %}" class="booking-redirect1">
                     <button class="btn btn-secondary btn-lg mb-5 booking-redirect">Click here to get booking!</button>
-                </a>
+                </form>
             </div>
             {% endif %}
             {% endif %}
