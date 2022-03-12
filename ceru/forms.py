@@ -22,6 +22,7 @@ class EditProfileForm(UserChangeForm):
         """
         model = User
         fields = ('username', 'email')
+        exclude = ('password')
 
 
 class UpdateBookingForm(forms.ModelForm):
