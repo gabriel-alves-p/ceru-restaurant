@@ -14,6 +14,7 @@ class EditProfileForm(UserChangeForm):
     """
     username = forms.CharField(max_length=50, required=True)
     email = forms.EmailField(max_length=100, required=True)
+    password = None
 
     class Meta:
         """
@@ -22,7 +23,6 @@ class EditProfileForm(UserChangeForm):
         """
         model = User
         fields = ('username', 'email')
-        exclude = ('password',)
 
 
 class UpdateBookingForm(forms.ModelForm):
