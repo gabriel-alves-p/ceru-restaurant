@@ -107,7 +107,7 @@ span {
 }
 
 
-#hero-image button,
+.hero-btn,
 #signup-hero-image button,
 #menus button,
 #find-us button,
@@ -117,7 +117,7 @@ span {
     color: #FFE7BD;
 }
 
-#hero-image button:hover,
+.hero-btn:hover,
 #signup-hero-image button:hover,
 #menus button:hover,
 #find-us button:hover,
